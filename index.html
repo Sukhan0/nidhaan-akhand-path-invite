@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="pa">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#081127">
+<meta name="description" content="ਸ਼੍ਰੀ ਆਖੰਡ ਪਾਠ ਸਾਹਿਬ — ਸ. ਨਿਧਾਨ ਸਿੰਘ · ਗੁਰਦੁਆਰਾ ਸ਼੍ਰੀ ਪਾਉਂਟਾ ਸਾਹਿਬ ਕਵੀ ਦਰਬਾਰ ਅਸਥਾਨ · 6–8 ਦਸੰਬਰ">
+<meta property="og:title" content="ਸ਼੍ਰੀ ਆਖੰਡ ਪਾਠ ਸਾਹਿਬ — S. Nidhaan Singh">
+<meta property="og:description" content="Aarambh Sun 6 Dec · Bhog Tue 8 Dec, 11 AM · Gurdwara Sri Paonta Sahib, Kavi Darbar Asthan">
+<title>ਸ਼੍ਰੀ ਆਖੰਡ ਪਾਠ ਸਾਹਿਬ · ਸ. ਨਿਧਾਨ ਸਿੰਘ</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%23081127' stroke='%23e9c57e' stroke-width='2'/%3E%3Ctext x='16' y='22' font-size='17' text-anchor='middle' fill='%23f3dc98'%3E%E0%A9%B4%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Great+Vibes&family=Mukta+Mahee:wght@400;500;600;700&family=Noto+Sans+Gurmukhi:wght@400;600&family=Noto+Serif+Gurmukhi:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#081127;--navy2:#111d45;--ink:#0d1838;
+  --kesri:#e8892b;--kesri-l:#f7b35c;--kesri-d:#b85e12;
+  --gold:#e9c57e;--gold-l:#fbe7b5;--gold-d:#b5843a;
+  --ivory:#fbf4e4;--ivory-d:#efe2c4;
+  --f-pa:"Noto Serif Gurmukhi","Mukta Mahee",serif;--f-pas:"Mukta Mahee","Noto Sans Gurmukhi",sans-serif;
+  --f-sc:"Great Vibes",cursive;--f-en:"Cormorant Garamond",Georgia,serif;--f-cap:"Cinzel","Cormorant Garamond",serif;
+  --vh:1vh;
+  --bx:5vw;--by:10vh;--bw:90vw;--bh:80vh;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--navy);-webkit-text-size-adjust:100%}
+body{background:var(--navy);color:var(--ivory);font-family:var(--f-pa);overflow-x:hidden;-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+a{color:inherit;text-decoration:none}
+html[lang="pa"] .t-en{display:none!important}
+html[lang="en"] .t-pa{display:none!important}
+html.locked,html.locked body{overflow:hidden;height:100%}
+#scroller{width:1px;pointer-events:none}
+
+/* ---------- loader ---------- */
+#loader{position:fixed;inset:0;z-index:200;display:grid;place-content:center;justify-items:center;gap:22px;background:radial-gradient(ellipse at 50% 45%,#16245a 0%,#081127 70%);transition:opacity .9s,visibility .9s}
+#loader.gone{opacity:0;visibility:hidden}
+.ld-ring{width:84px;height:84px;border-radius:50%;display:grid;place-items:center;border:1.5px solid rgba(233,197,126,.35);position:relative}
+.ld-ring::after{content:"";position:absolute;inset:-1.5px;border-radius:50%;border:1.5px solid transparent;border-top-color:var(--gold);animation:spin 1.3s linear infinite}
+.ld-ek{font-size:38px;color:var(--gold);line-height:1;transform:translateY(3px)}
+.ld-bar{width:120px;height:2px;background:rgba(233,197,126,.18);border-radius:2px;overflow:hidden}
+.ld-bar i{display:block;height:100%;width:5%;background:linear-gradient(90deg,var(--kesri),var(--gold-l));transition:width .5s}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ---------- stage ---------- */
+#stage{position:fixed;inset:0;overflow:hidden}
+#gl{position:absolute;inset:0;width:100%;height:100%;display:block}
+#fallbackBg{position:absolute;inset:0;display:none;background:radial-gradient(ellipse at 50% 100%,rgba(232,137,43,.35),transparent 55%),radial-gradient(ellipse at 50% 30%,#1b2b66,#081127 70%)}
+html.nogl #fallbackBg{display:block}
+.fb-arch{position:absolute;left:var(--ax);top:var(--ay);width:var(--aw);height:var(--ah);background:var(--ivory-d);-webkit-mask:var(--amask) center/100% 100% no-repeat;mask:var(--amask) center/100% 100% no-repeat;box-shadow:0 0 80px rgba(0,0,0,.5);filter:drop-shadow(0 0 30px rgba(247,179,92,.3))}
+#cssPetals{position:absolute;inset:0;pointer-events:none;display:none;overflow:hidden}
+#cssPetals i{position:absolute;top:-40px;width:12px;height:15px;border-radius:60% 60% 60% 0;background:linear-gradient(135deg,#ffc34d,#e8740f);opacity:.85;animation:fall linear infinite}
+@keyframes fall{to{transform:translate3d(60px,110vh,0) rotate(540deg)}}
+#vignette{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 120% 90% at 50% 50%,transparent 55%,rgba(4,8,22,.55) 100%)}
+
+/* ---------- scenes ---------- */
+#scenes{position:absolute;inset:0;pointer-events:none}
+.scene{position:absolute;left:var(--bx);top:var(--by);width:var(--bw);height:var(--bh);display:flex;align-items:center;justify-content:center;visibility:hidden;opacity:0;will-change:transform,opacity;transform-origin:50% 50%}
+.scene.active{pointer-events:auto}
+.sc-inner{width:100%;display:flex;flex-direction:column;align-items:center;text-align:center;transform-origin:50% 50%;padding:4px 2px}
+.sc-inner > *{max-width:100%}
+.scene p,.scene h1,.scene h2,.scene h3{text-shadow:0 2px 14px rgba(4,9,28,.85),0 0 2px rgba(4,9,28,.6)}
+
+.eyebrow{font-family:var(--f-pas);font-weight:600;font-size:16px;letter-spacing:.04em;color:var(--kesri-l);line-height:1.5}
+html[lang="en"] .eyebrow{font-family:var(--f-cap);font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;font-weight:500;color:var(--gold)}
+
+/* seal / khanda */
+.seal{display:block;position:relative}
+.seal svg{width:100%;height:100%;display:block;overflow:visible}
+.seal.sm{width:64px;height:64px;margin-bottom:12px}
+.seal.md{width:84px;height:84px;margin-bottom:14px}
+.seal.xl{width:132px;height:132px}
+
+.rule{width:min(240px,70%);height:14px;margin:14px auto;position:relative;display:flex;align-items:center;justify-content:center}
+.rule::before,.rule::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
+.rule::after{background:linear-gradient(90deg,var(--gold),transparent)}
+.rule i{width:9px;height:9px;transform:rotate(45deg);border:1px solid var(--gold);margin:0 10px;background:rgba(232,137,43,.4)}
+
+/* 0 bani */
+.s-bani .eyebrow{margin-bottom:14px}
+.bani{display:flex;flex-direction:column;gap:2px}
+.bl{font-family:var(--f-pa);font-weight:600;font-size:clamp(22px,6.4vw,34px);line-height:1.6;background:linear-gradient(180deg,#fff6dc 10%,var(--gold) 60%,#d9a24f);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none!important;filter:drop-shadow(0 2px 10px rgba(4,9,28,.9)) drop-shadow(0 0 18px rgba(247,179,92,.25));padding:0 4px}
+.bl:first-child{font-size:clamp(25px,7.4vw,40px);margin-bottom:6px}
+.bani-en{font-family:var(--f-en);font-style:italic;font-size:19px;line-height:1.45;color:var(--ivory);max-width:30em}
+.bani-note{margin-top:8px;font-family:var(--f-cap);font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:rgba(233,197,126,.7)}
+
+/* 1 blessing */
+.grand{font-family:var(--f-pas);font-size:16.5px;line-height:1.5;color:var(--ivory);font-weight:500;max-width:22em}
+html[lang="en"] .grand{font-family:var(--f-en);font-size:19px;font-style:italic}
+.s-bless .eyebrow{margin-top:6px}
+.namewrap{position:relative;margin:22px 0 10px;padding:28px 0}
+.halo{position:absolute;left:50%;top:50%;width:230px;height:230px;margin:-115px 0 0 -115px;pointer-events:none}
+.halo i{position:absolute;inset:0;border-radius:50%;border:1px solid rgba(233,197,126,.45)}
+.halo i:nth-child(1){background:radial-gradient(circle,rgba(247,179,92,.28),rgba(247,179,92,0) 65%);border:0}
+.halo i:nth-child(2){inset:18px;border-style:dashed;animation:spin 40s linear infinite}
+.halo i:nth-child(3){inset:-14px;border-color:rgba(233,197,126,.18);animation:spin 70s linear infinite reverse}
+.child{position:relative;font-family:var(--f-pa);font-weight:700;font-size:clamp(38px,11vw,62px);line-height:1.35;white-space:nowrap;background:linear-gradient(180deg,#fff8e2 0%,var(--gold-l) 35%,var(--gold) 60%,#c98b35 100%);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none!important;filter:drop-shadow(0 3px 14px rgba(4,9,28,.9)) drop-shadow(0 0 26px rgba(247,179,92,.35))}
+html[lang="en"] .child{font-family:var(--f-sc);font-weight:400;font-size:clamp(40px,10.5vw,72px);line-height:1.25;padding:0 .25em}
+.child .ch{display:inline-block;background:inherit;-webkit-background-clip:text;background-clip:text;color:transparent;padding:0 .02em}
+.child > span{background:inherit;-webkit-background-clip:text;background-clip:text}
+.bless-sub{font-family:var(--f-pas);font-size:19px;font-weight:500;color:var(--ivory)}
+html[lang="en"] .bless-sub{font-family:var(--f-en);font-style:italic;font-size:19px}
+.feet{width:76px;height:52px;margin-top:18px;opacity:.95}
+.feet svg{width:100%;height:100%;overflow:visible}
+
+/* 2 letter */
+.letter{position:relative;width:min(100%,560px);padding:34px 22px 30px;border-radius:6px 6px 6px 6px;color:#2a1a0c;background:
+  radial-gradient(ellipse at 50% 0%,rgba(255,255,255,.7),transparent 60%),
+  linear-gradient(180deg,#fdf7e8,#f4e6c6);box-shadow:0 30px 60px -20px rgba(0,0,0,.7),0 0 0 1px rgba(181,132,58,.6),inset 0 0 0 6px #fbf4e4,inset 0 0 0 7px rgba(181,132,58,.55),inset 0 0 40px rgba(181,132,58,.18);transform-origin:50% 0}
+.letter p{text-shadow:none!important}
+.lt-orn{position:absolute;left:50%;width:120px;height:22px;margin-left:-60px}
+.lt-orn.top{top:9px}.lt-orn.bot{bottom:9px;transform:scaleY(-1)}
+.lt-orn svg{width:100%;height:100%}
+.tw{font-family:var(--f-pa);font-size:17.5px;line-height:1.95;text-align:center;color:#2b1b0d}
+html[lang="en"] .tw{font-family:var(--f-en);font-size:19px;line-height:1.55;font-weight:500}
+.tw .c{opacity:.08;transition:opacity .45s,color .6s;}
+.tw .c.on{opacity:1}
+.tw .c.hl{color:#a4520c;font-weight:700}
+
+/* 3 date */
+.bigdate{display:flex;align-items:center;justify-content:center;gap:16px;margin:14px 0 4px}
+.bd-num{font-family:var(--f-cap);font-weight:600;font-size:clamp(84px,25vw,128px);line-height:1;background:linear-gradient(180deg,#fff6dc,var(--gold) 55%,#b9802f);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 4px 16px rgba(4,9,28,.9));padding:0 6px}
+.bd-day,.bd-mon{font-family:var(--f-pas);font-size:17px;font-weight:600;color:var(--ivory);width:86px;padding:8px 0;border-top:1px solid rgba(233,197,126,.6);border-bottom:1px solid rgba(233,197,126,.6);text-shadow:0 2px 10px rgba(4,9,28,.9)}
+html[lang="en"] .bd-day,html[lang="en"] .bd-mon{font-family:var(--f-cap);font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;font-weight:500}
+.bd-time{font-family:var(--f-pas);font-size:20px;font-weight:600;color:var(--kesri-l);margin-bottom:18px}
+html[lang="en"] .bd-time{font-family:var(--f-cap);font-size:13px;letter-spacing:.2em;text-transform:uppercase}
+.cdwrap{display:flex;gap:9px;justify-content:center;margin-bottom:20px}
+.cd{width:64px;padding:10px 0 8px;border-radius:12px;background:linear-gradient(180deg,rgba(26,40,92,.85),rgba(10,18,46,.85));box-shadow:inset 0 0 0 1px rgba(233,197,126,.45),0 10px 24px -8px rgba(0,0,0,.6);display:flex;flex-direction:column;align-items:center;gap:2px}
+.cd b{font-family:var(--f-cap);font-weight:600;font-size:26px;color:var(--gold-l);line-height:1.1;display:block}
+.cd b.tick{animation:tick .5s ease}
+@keyframes tick{0%{transform:translateY(-6px);opacity:.3}100%{transform:none;opacity:1}}
+.cd>span{font-family:var(--f-pas);font-size:12px;color:rgba(251,244,228,.8)}
+html[lang="en"] .cd>span{font-family:var(--f-cap);font-size:8.5px;letter-spacing:.16em;text-transform:uppercase}
+.cd-done{font-family:var(--f-pas);font-size:17px;color:var(--gold);margin-bottom:16px}
+
+.btn{display:inline-flex;align-items:center;gap:9px;padding:12px 20px;border-radius:999px;font-family:var(--f-pas);font-weight:600;font-size:15.5px;color:#2a1606;background:linear-gradient(180deg,#ffe2a6,var(--gold) 50%,#d39a45);box-shadow:0 8px 22px -6px rgba(232,137,43,.55),inset 0 1px 0 rgba(255,255,255,.7),0 0 0 1px rgba(255,236,190,.5);pointer-events:auto;transition:transform .25s,box-shadow .25s;text-shadow:none!important}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 28px -6px rgba(232,137,43,.7),inset 0 1px 0 rgba(255,255,255,.7)}
+.btn svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.btn.sm{padding:9px 16px;font-size:14px}
+.btn.ghost{background:rgba(10,18,46,.55);color:var(--gold-l);box-shadow:inset 0 0 0 1px rgba(233,197,126,.6)}
+html[lang="en"] .btn{font-family:var(--f-cap);font-size:12px;letter-spacing:.12em}
+
+/* 4 programme */
+.s-prog .eyebrow{margin-bottom:16px;font-size:18px}
+.pcards,.venues{display:flex;flex-direction:column;gap:12px;width:min(100%,520px);perspective:900px}
+.pc{display:flex;align-items:center;gap:14px;text-align:left;padding:14px 16px;border-radius:16px;background:linear-gradient(135deg,rgba(30,46,104,.88),rgba(10,18,46,.9));box-shadow:inset 0 0 0 1px rgba(233,197,126,.42),0 16px 34px -14px rgba(0,0,0,.8);position:relative;overflow:hidden}
+.pc::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,236,190,.14) 45%,transparent 60%);transform:translateX(-100%);animation:sheen 6s ease-in-out infinite}
+.pc:nth-child(2)::after{animation-delay:1.2s}.pc:nth-child(3)::after{animation-delay:2.4s}
+@keyframes sheen{0%,60%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+.pc-ic{flex:0 0 54px;height:54px;border-radius:50%;background:radial-gradient(circle at 50% 40%,rgba(247,179,92,.35),rgba(232,137,43,.08));box-shadow:inset 0 0 0 1px rgba(233,197,126,.55);display:grid;place-items:center}
+.pc-ic svg{width:34px;height:34px;overflow:visible}
+.pc h3{font-family:var(--f-pa);font-weight:600;font-size:17px;line-height:1.45;color:var(--gold-l)}
+html[lang="en"] .pc h3{font-family:var(--f-en);font-size:20px;font-weight:600}
+.pc-when{font-family:var(--f-pas);font-size:15px;color:var(--ivory);line-height:1.45}
+.pc-time{font-family:var(--f-pas);font-size:15px;font-weight:700;color:var(--kesri-l);line-height:1.4}
+html[lang="en"] .pc-when{font-family:var(--f-en);font-size:17px}
+html[lang="en"] .pc-time{font-family:var(--f-cap);font-size:12px;letter-spacing:.16em}
+.pc p,.pc h3,.vc p,.vc h3{text-shadow:none!important}
+
+/* 5 venues */
+.s-venue .eyebrow{margin-bottom:16px;font-size:18px}
+.vc{padding:18px 16px 16px;border-radius:18px;background:linear-gradient(160deg,rgba(30,46,104,.9),rgba(10,18,46,.92));box-shadow:inset 0 0 0 1px rgba(233,197,126,.45),0 18px 36px -16px rgba(0,0,0,.85);display:flex;flex-direction:column;align-items:center;gap:3px;position:relative}
+.vc-pin{width:30px;height:30px;margin-bottom:4px}
+.vc-pin svg{width:100%;height:100%}
+.vc-k{font-family:var(--f-pas);font-size:13.5px;font-weight:600;color:var(--kesri-l)}
+html[lang="en"] .vc-k{font-family:var(--f-cap);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase}
+.vc h3{font-family:var(--f-pa);font-size:21px;font-weight:700;color:var(--gold-l);line-height:1.45}
+html[lang="en"] .vc h3{font-family:var(--f-en);font-size:24px;font-weight:600}
+.vc-sub{font-family:var(--f-pas);font-size:15px;color:var(--ivory);margin-bottom:10px}
+html[lang="en"] .vc-sub{font-family:var(--f-en);font-size:16.5px;font-style:italic}
+
+/* 6 close */
+.close-line{font-family:var(--f-pa);font-size:20px;font-weight:600;line-height:1.7;color:var(--ivory);max-width:19em}
+html[lang="en"] .close-line{font-family:var(--f-en);font-style:italic;font-size:22px;line-height:1.4}
+.hosts{margin:4px 0 22px}
+.hosts p{font-family:var(--f-pa);font-weight:700;font-size:clamp(21px,6vw,28px);line-height:1.5;color:var(--gold-l)}
+html[lang="en"] .hosts p{font-family:var(--f-sc);font-weight:400;font-size:clamp(27px,7.4vw,44px);line-height:1.3;white-space:nowrap}
+.hosts p.amp{font-family:var(--f-sc);font-size:30px;line-height:1;color:var(--kesri-l)}
+html[lang="en"] .hosts p.amp{font-size:30px}
+
+/* ---------- UI ---------- */
+#ui{position:fixed;top:max(12px,env(safe-area-inset-top));right:12px;z-index:60;display:flex;gap:8px;opacity:0;pointer-events:none;transition:opacity .8s}
+#ui.show{opacity:1;pointer-events:auto}
+.pill{height:38px;border-radius:999px;display:flex;align-items:center;padding:3px;background:rgba(8,17,39,.6);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);box-shadow:inset 0 0 0 1px rgba(233,197,126,.45)}
+.pill span{min-width:34px;height:32px;display:grid;place-items:center;border-radius:999px;font-size:13px;font-family:var(--f-cap);color:var(--gold);transition:all .35s}
+.pill .lb-pa{font-family:var(--f-pa);font-size:15px}
+html[lang="pa"] .lb-pa,html[lang="en"] .lb-en{background:linear-gradient(180deg,var(--kesri-l),var(--kesri-d));color:#fff8ea}
+.pill.round{width:38px;justify-content:center}
+.pill svg{width:19px;height:19px;fill:none;stroke:var(--gold);stroke-width:1.7;stroke-linecap:round}
+.pill .mus-off{transition:opacity .3s}
+.pill[aria-pressed="true"] .mus-off{opacity:0}
+.pill[aria-pressed="true"]{box-shadow:inset 0 0 0 1px var(--kesri-l),0 0 18px rgba(247,179,92,.45)}
+#dots{position:fixed;right:8px;top:50%;transform:translateY(-50%);z-index:30;display:flex;flex-direction:column;gap:8px;opacity:0;pointer-events:none;transition:opacity .8s}
+#dots.show{opacity:1;pointer-events:auto}
+#dots button{width:18px;height:18px;display:grid;place-items:center}
+#dots button::before{content:"";width:6px;height:6px;border-radius:50%;background:rgba(233,197,126,.35);transition:all .4s}
+#dots button.on::before{background:var(--kesri-l);height:16px;border-radius:4px;box-shadow:0 0 10px rgba(247,179,92,.7)}
+#hint{position:fixed;left:50%;bottom:max(16px,env(safe-area-inset-bottom));transform:translateX(-50%);z-index:20;display:flex;flex-direction:column;align-items:center;gap:6px;font-family:var(--f-pas);font-size:12.5px;color:rgba(251,244,228,.85);opacity:0;transition:opacity .8s;pointer-events:none;text-shadow:0 1px 8px rgba(0,0,0,.8)}
+html[lang="en"] #hint{font-family:var(--f-cap);font-size:10px;letter-spacing:.2em;text-transform:uppercase}
+#hint.show{opacity:1}
+#hint i{width:20px;height:30px;border-radius:12px;border:1.5px solid rgba(233,197,126,.8);position:relative}
+#hint i::after{content:"";position:absolute;left:50%;top:6px;width:3px;height:6px;margin-left:-1.5px;border-radius:2px;background:var(--gold);animation:wheel 1.8s ease-in-out infinite}
+@keyframes wheel{0%{transform:translateY(0);opacity:1}100%{transform:translateY(10px);opacity:0}}
+
+/* ---------- doors ---------- */
+#doors{position:fixed;inset:0;z-index:100;perspective:1400px;perspective-origin:50% 50%;overflow:hidden}
+#doors.gone{display:none}
+.d-glow{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(255,214,140,.9),rgba(247,179,92,.35) 30%,rgba(8,17,39,0) 70%);opacity:0}
+.door{position:absolute;top:0;bottom:0;width:50.2%;transform-style:preserve-3d;will-change:transform}
+.door.l{left:0;transform-origin:0 50%}
+.door.r{right:0;transform-origin:100% 50%}
+.d-face{position:absolute;inset:0;background:
+  radial-gradient(ellipse at 50% 40%,rgba(255,240,200,.25),transparent 60%),
+  repeating-linear-gradient(90deg,rgba(255,255,255,.03) 0 2px,rgba(0,0,0,.03) 2px 5px),
+  linear-gradient(180deg,#c99645 0%,#e9c57e 18%,#b07a2e 46%,#e4bc6e 72%,#9c6a24 100%);
+  box-shadow:inset 0 0 0 3px #7a4f15,inset 0 0 60px rgba(70,40,5,.55);display:flex;flex-direction:column;justify-content:space-evenly;align-items:center;padding:6% 10%;gap:4%}
+.door.r .d-face{transform:scaleX(-1)}
+.d-panel{width:100%;flex:1;border-radius:6px;background:
+  radial-gradient(ellipse at 50% 50%,rgba(255,236,190,.35),transparent 70%),
+  linear-gradient(180deg,#a8732a,#d7ad5f 50%,#a06b24);box-shadow:inset 0 2px 0 rgba(255,240,200,.6),inset 0 -2px 0 rgba(60,30,0,.5),inset 0 0 0 6px rgba(120,78,20,.35),inset 0 0 0 7px rgba(255,236,190,.5),0 3px 8px rgba(60,30,0,.45);position:relative;overflow:hidden}
+.d-panel.p2{flex:1.6}
+.d-panel svg{position:absolute;inset:10%;width:80%;height:80%}
+.d-edge{position:absolute;top:0;bottom:0;right:0;width:14px;background:linear-gradient(90deg,#7a4f15,#f3d898 50%,#7a4f15);box-shadow:-2px 0 6px rgba(0,0,0,.35)}
+.d-arch{position:absolute;inset:0;pointer-events:none}
+.d-arch svg{width:100%;height:100%}
+.d-center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-align:center;pointer-events:none;padding:0 20px}
+.d-center > *{pointer-events:auto}
+.dc-top{font-family:var(--f-pas);font-weight:600;font-size:17px;color:#3a2104;letter-spacing:.04em;padding:6px 20px;border-radius:999px;background:linear-gradient(180deg,rgba(255,245,215,.92),rgba(246,222,165,.92));box-shadow:0 4px 14px rgba(60,30,0,.4),inset 0 0 0 1px rgba(122,79,21,.5)}
+html[lang="en"] .dc-top{font-family:var(--f-cap);font-size:12px;letter-spacing:.24em;text-transform:uppercase}
+.dc-title{font-family:var(--f-pa);font-weight:700;font-size:clamp(24px,7vw,36px);line-height:1.4;color:#fff6dc;text-shadow:0 2px 0 #6b4210,0 4px 18px rgba(40,20,0,.7);padding:4px 18px;background:radial-gradient(ellipse at 50% 50%,rgba(70,40,5,.55),transparent 72%)}
+html[lang="en"] .dc-title{font-family:var(--f-cap);font-weight:600;letter-spacing:.06em}
+.dc-tap{font-family:var(--f-pas);font-size:14.5px;font-weight:600;color:#3a2104;padding:5px 16px;border-radius:999px;background:rgba(255,245,215,.82);box-shadow:inset 0 0 0 1px rgba(122,79,21,.45);animation:pulse 2.2s ease-in-out infinite}
+html[lang="en"] .dc-tap{font-family:var(--f-cap);font-size:11px;letter-spacing:.24em;text-transform:uppercase}
+@keyframes pulse{50%{opacity:.6}}
+#openBtn{position:relative;width:150px;height:150px;display:grid;place-items:center;border-radius:50%}
+#openBtn:focus-visible{outline:2px solid #fff;outline-offset:6px}
+.seal-halo{position:absolute;inset:-14px;border-radius:50%;background:radial-gradient(circle,rgba(255,230,170,.75),rgba(255,200,110,0) 70%);animation:halo 2.6s ease-in-out infinite}
+@keyframes halo{50%{transform:scale(1.12);opacity:.6}}
+.dlang{position:absolute;top:max(14px,env(safe-area-inset-top));right:14px;padding:7px 14px;border-radius:999px;font-family:var(--f-cap);font-size:12px;letter-spacing:.12em;color:#3a2104;background:rgba(255,245,215,.85);box-shadow:inset 0 0 0 1px rgba(122,79,21,.5);z-index:3}
+.dlang .t-en{font-family:var(--f-pa);letter-spacing:0;font-size:14px}
+
+@media (min-aspect-ratio:1/1) and (min-width:700px){
+  .venues{flex-direction:row;width:min(100%,620px)}
+  .venues .vc{flex:1}
+}
+@media (min-width:900px){
+  .d-face{padding:5% 14%}
+  .eyebrow{font-size:18px}
+  .tw{font-size:19px}
+  .letter{padding:40px 40px 34px}
+}
+@media (prefers-reduced-motion:reduce){
+  .halo i,.pc::after,.seal-halo,.dc-tap{animation:none!important}
+}
+
+</style>
+</head>
+<body>
+<div id="loader" aria-hidden="true">
+  <div class="ld-ring"><span class="ld-ek">ੴ</span></div>
+  <div class="ld-bar"><i id="ldBar"></i></div>
+</div>
+
+<div id="stage">
+  <canvas id="gl" aria-hidden="true"></canvas>
+  <div id="fallbackBg" aria-hidden="true"><div class="fb-arch"></div></div>
+  <div id="cssPetals" aria-hidden="true"></div>
+  <div id="vignette" aria-hidden="true"></div>
+
+  <main id="scenes">
+    <!-- 0 GURBANI -->
+    <section class="scene s-bani" data-i="0" aria-label="ਗੁਰਬਾਣੀ">
+      <div class="sc-inner">
+        <div class="seal sm" data-a="pop"></div>
+        <p class="eyebrow" data-a="up"><span class="t-pa">ਸ਼੍ਰੀ ਆਖੰਡ ਪਾਠ ਸਾਹਿਬ</span><span class="t-en">Sri Akhand Path Sahib</span></p>
+        <div class="bani" data-a="bani">
+          <p class="bl">ਪੂਤਾ ਮਾਤਾ ਕੀ ਆਸੀਸ॥</p>
+          <p class="bl">ਨਿਮਖ ਨਾ ਬਿਸਰਹੁ ਤੁਮ ਕੋ</p>
+          <p class="bl">ਹਰਿ ਹਰਿ ਸਦਾ ਭਜਹੁ ਜਗਦੀਸ਼ ॥</p>
+        </div>
+        <div class="rule" data-a="draw"><i></i></div>
+        <p class="bani-en t-en" data-a="up">“A mother’s blessing upon her son: may you never forget the Lord, even for an instant; forever meditate on the Lord of the Universe.”</p>
+        <p class="bani-note t-en" data-a="up">English rendering is a translation of the Gurbani above.</p>
+      </div>
+    </section>
+
+    <!-- 1 BLESSING -->
+    <section class="scene s-bless" data-i="1">
+      <div class="sc-inner">
+        <p class="grand" data-a="up"><span class="t-pa">ਸ. ਹਰਭਜਨ ਸਿੰਘ ਹੁੰਦਲ ਤੇ ਸਰਦਾਰਨੀ ਮਨਜੀਤ ਕੌਰ ਹੁੰਦਲ ਨੂੰ</span><span class="t-en">S. Harbhajan Singh Hundal &amp; Sardarni Manjeet Kaur Hundal</span></p>
+        <p class="eyebrow" data-a="up"><span class="t-pa">ਅਕਾਲ ਪੁਰਖ ਨੇ ਦੋਹਤਰੇ</span><span class="t-en">have been blessed by Akal Purakh with a grandson</span></p>
+        <div class="namewrap">
+          <div class="halo" data-a="halo" aria-hidden="true"><i></i><i></i><i></i></div>
+          <h1 class="child" data-a="name"><span class="t-pa">ਸ. ਨਿਧਾਨ ਸਿੰਘ</span><span class="t-en">S. Nidhaan Singh</span></h1>
+        </div>
+        <p class="bless-sub" data-a="up"><span class="t-pa">ਦੀ ਦਾਤ ਬਖਸ਼ੀ ਹੈ</span><span class="t-en">their daughter’s son — a gift from the Timeless Lord</span></p>
+        <div class="feet" data-a="feet" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- 2 INVITATION -->
+    <section class="scene s-letter" data-i="2">
+      <div class="sc-inner">
+        <div class="letter" data-a="unroll">
+          <div class="lt-orn top" aria-hidden="true"></div>
+          <p class="tw t-pa" data-a="type">ਆਪ ਜੀ ਨੂੰ ਬੜੀ ਖੁਸ਼ੀ ਨਾਲ ਸੂਚਿਤ ਕੀਤਾ ਜਾਂਦਾ ਹੈ ਕਿ ਸ. ਹਰਭਜਨ ਸਿੰਘ ਹੁੰਦਲ ਤੇ ਸਰਦਾਰਨੀ ਮਨਜੀਤ ਕੌਰ ਹੁੰਦਲ ਨੂੰ ਅਕਾਲ ਪੁਰਖ ਨੇ ਦੋਹਤਰੇ ਸ. ਨਿਧਾਨ ਸਿੰਘ ਦੀ ਦਾਤ ਬਖਸ਼ੀ ਹੈ ਜਿਸਦੇ ਸ਼ੁਕਰਾਨੇ ਵਜੋਂ ਅਸੀ ਗੁਰਦੁਆਰਾ ਸ਼੍ਰੀ ਪਾਉਂਟਾ ਸਾਹਿਬ ਕਵੀ ਦਰਬਾਰ ਅਸਥਾਨ ਵਿਖੇ ਸ਼੍ਰੀ ਆਖੰਡ ਪਾਠ ਸਾਹਿਬ ਕਰਵਾ ਰਹੇ ਹਾ। ਆਪ ਜੀ ਨੇ ਪਰਿਵਾਰ ਸਮੇਂਤ ਦਰਸ਼ਨ ਦੇਣ ਦੀ ਕਿਰਪਾਲਤਾ ਕਰਨੀ ਜੀ।</p>
+          <p class="tw t-en" data-a="type">With great joy we share that Akal Purakh, the Timeless Lord, has blessed S. Harbhajan Singh Hundal and Sardarni Manjeet Kaur Hundal with a grandson — their daughter’s son, S. Nidhaan Singh. In gratitude, we are holding Sri Akhand Path Sahib at Gurdwara Sri Paonta Sahib, Kavi Darbar Asthan. Kindly grace the occasion with your presence, together with your family.</p>
+          <div class="lt-orn bot" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 COUNTDOWN -->
+    <section class="scene s-date" data-i="3">
+      <div class="sc-inner">
+        <p class="eyebrow" data-a="up"><span class="t-pa">ਆਰੰਭ ਸ਼੍ਰੀ ਆਖੰਡ ਪਾਠ ਸਾਹਿਬ</span><span class="t-en">Aarambh · Sri Akhand Path Sahib begins</span></p>
+        <div class="bigdate" data-a="flip">
+          <span class="bd-day"><span class="t-pa">ਐਤਵਾਰ</span><span class="t-en">Sunday</span></span>
+          <span class="bd-num">6</span>
+          <span class="bd-mon"><span class="t-pa">ਦਸੰਬਰ 2026</span><span class="t-en">December 2026</span></span>
+        </div>
+        <p class="bd-time" data-a="up"><span class="t-pa">ਸਵੇਰੇ 11 ਵਜੇ</span><span class="t-en">11:00 in the morning (IST)</span></p>
+        <div class="cdwrap" data-a="stagger">
+          <div class="cd"><b id="cdD">00</b><span><span class="t-pa">ਦਿਨ</span><span class="t-en">Days</span></span></div>
+          <div class="cd"><b id="cdH">00</b><span><span class="t-pa">ਘੰਟੇ</span><span class="t-en">Hours</span></span></div>
+          <div class="cd"><b id="cdM">00</b><span><span class="t-pa">ਮਿੰਟ</span><span class="t-en">Mins</span></span></div>
+          <div class="cd"><b id="cdS">00</b><span><span class="t-pa">ਸਕਿੰਟ</span><span class="t-en">Secs</span></span></div>
+        </div>
+        <p class="cd-done" id="cdDone" hidden><span class="t-pa">ਵਾਹਿਗੁਰੂ ਜੀ ਕਾ ਖਾਲਸਾ, ਵਾਹਿਗੁਰੂ ਜੀ ਕੀ ਫਤਿਹ</span><span class="t-en">The Akhand Path Sahib has begun</span></p>
+        <button type="button" class="btn" id="icsBtn" data-a="up"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4M12 13v5M9.5 15.5h5"/></svg><span class="t-pa">ਕੈਲੰਡਰ ਵਿੱਚ ਜੋੜੋ</span><span class="t-en">Add to calendar</span></button>
+      </div>
+    </section>
+
+    <!-- 4 PROGRAMME -->
+    <section class="scene s-prog" data-i="4">
+      <div class="sc-inner">
+        <p class="eyebrow" data-a="up"><span class="t-pa">ਪ੍ਰੋਗਰਾਮ</span><span class="t-en">Programme</span></p>
+        <div class="pcards" data-a="cards">
+          <article class="pc">
+            <div class="pc-ic ic-diya" aria-hidden="true"></div>
+            <div class="pc-tx">
+              <h3><span class="t-pa">ਆਰੰਭ ਸ਼੍ਰੀ ਆਖੰਡ ਪਾਠ ਸਾਹਿਬ</span><span class="t-en">Aarambh — Sri Akhand Path Sahib</span></h3>
+              <p class="pc-when"><span class="t-pa">6 ਦਸੰਬਰ ਦਿਨ ਐਤਵਾਰ</span><span class="t-en">Sunday, 6 December</span></p>
+              <p class="pc-time"><span class="t-pa">ਸਵੇਰੇ 11 ਵਜੇ</span><span class="t-en">11:00 AM</span></p>
+            </div>
+          </article>
+          <article class="pc">
+            <div class="pc-ic ic-khanda" aria-hidden="true"></div>
+            <div class="pc-tx">
+              <h3><span class="t-pa">ਭੋਗ ਸ਼੍ਰੀ ਆਖੰਡ ਪਾਠ ਸਾਹਿਬ</span><span class="t-en">Bhog — Sri Akhand Path Sahib</span></h3>
+              <p class="pc-when"><span class="t-pa">8 ਦਸੰਬਰ ਦਿਨ ਮੰਗਲਵਾਰ</span><span class="t-en">Tuesday, 8 December</span></p>
+              <p class="pc-time"><span class="t-pa">ਸਵੇਰੇ 11 ਵਜੇ</span><span class="t-en">11:00 AM</span></p>
+            </div>
+          </article>
+          <article class="pc">
+            <div class="pc-ic ic-langar" aria-hidden="true"></div>
+            <div class="pc-tx">
+              <h3><span class="t-pa">ਲੰਗਰ</span><span class="t-en">Langar</span></h3>
+              <p class="pc-when"><span class="t-pa">ਭਾਟੀਆ ਪੈਲੇਸ ਪਾਉਂਟਾ ਸਾਹਿਬ ਵਿਖੇ</span><span class="t-en">at Bhatia Palace, Paonta Sahib</span></p>
+              <p class="pc-time"><span class="t-pa">ਦੁਪਹਿਰ 12 ਵਜੇ</span><span class="t-en">12:00 noon</span></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 VENUES -->
+    <section class="scene s-venue" data-i="5">
+      <div class="sc-inner">
+        <p class="eyebrow" data-a="up"><span class="t-pa">ਸਥਾਨ</span><span class="t-en">Venues</span></p>
+        <div class="venues" data-a="cards">
+          <article class="vc">
+            <div class="vc-pin" aria-hidden="true"></div>
+            <p class="vc-k"><span class="t-pa">ਸ਼੍ਰੀ ਆਖੰਡ ਪਾਠ ਸਾਹਿਬ</span><span class="t-en">Sri Akhand Path Sahib</span></p>
+            <h3><span class="t-pa">ਗੁਰਦੁਆਰਾ ਸ਼੍ਰੀ ਪਾਉਂਟਾ ਸਾਹਿਬ</span><span class="t-en">Gurdwara Sri Paonta Sahib</span></h3>
+            <p class="vc-sub"><span class="t-pa">ਕਵੀ ਦਰਬਾਰ ਅਸਥਾਨ</span><span class="t-en">Kavi Darbar Asthan · Paonta Sahib, Himachal Pradesh</span></p>
+            <a class="btn sm" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Gurdwara%20Paonta%20Sahib%20Kavi%20Darbar%2C%20Paonta%20Sahib%2C%20Himachal%20Pradesh"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></svg><span class="t-pa">ਨਕਸ਼ੇ ਵਿੱਚ ਵੇਖੋ</span><span class="t-en">Open in Maps</span></a>
+          </article>
+          <article class="vc">
+            <div class="vc-pin" aria-hidden="true"></div>
+            <p class="vc-k"><span class="t-pa">ਲੰਗਰ</span><span class="t-en">Langar</span></p>
+            <h3><span class="t-pa">ਭਾਟੀਆ ਪੈਲੇਸ</span><span class="t-en">Bhatia Palace</span></h3>
+            <p class="vc-sub"><span class="t-pa">ਪਾਉਂਟਾ ਸਾਹਿਬ</span><span class="t-en">Paonta Sahib, Himachal Pradesh</span></p>
+            <a class="btn sm" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Bhatia%20Palace%2C%20Paonta%20Sahib%2C%20Himachal%20Pradesh"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></svg><span class="t-pa">ਨਕਸ਼ੇ ਵਿੱਚ ਵੇਖੋ</span><span class="t-en">Open in Maps</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 CLOSING -->
+    <section class="scene s-close" data-i="6">
+      <div class="sc-inner">
+        <div class="seal md" data-a="pop"></div>
+        <p class="close-line" data-a="up"><span class="t-pa">ਆਪ ਜੀ ਨੇ ਪਰਿਵਾਰ ਸਮੇਂਤ ਦਰਸ਼ਨ ਦੇਣ ਦੀ ਕਿਰਪਾਲਤਾ ਕਰਨੀ ਜੀ।</span><span class="t-en">Kindly grace us with your presence, together with your family.</span></p>
+        <div class="rule" data-a="draw"><i></i></div>
+        <div class="hosts" data-a="stagger">
+          <p><span class="t-pa">ਸ. ਹਰਭਜਨ ਸਿੰਘ ਹੁੰਦਲ</span><span class="t-en">S. Harbhajan Singh Hundal</span></p>
+          <p class="amp">&amp;</p>
+          <p><span class="t-pa">ਸਰਦਾਰਨੀ ਮਨਜੀਤ ਕੌਰ ਹੁੰਦਲ</span><span class="t-en">Sardarni Manjeet Kaur Hundal</span></p>
+        </div>
+        <button type="button" class="btn ghost" id="replayBtn" data-a="up"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.4-5.7M4 4v4.5h4.5"/></svg><span class="t-pa">ਮੁੜ ਵੇਖੋ</span><span class="t-en">Watch again</span></button>
+      </div>
+    </section>
+  </main>
+</div>
+
+<div id="scroller" aria-hidden="true"></div>
+
+<header id="ui">
+  <button type="button" id="langBtn" class="pill" aria-label="Language / ਭਾਸ਼ਾ"><span class="lb-pa">ਪੰ</span><span class="lb-en">EN</span></button>
+  <button type="button" id="musicBtn" class="pill round" aria-pressed="false" aria-label="Music"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="mus-note" d="M9 18V6l10-2v12"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="16.5" cy="16" r="2.5"/><path class="mus-off" d="M3 3l18 18"/></svg></button>
+</header>
+<nav id="dots" aria-label="Sections"></nav>
+<div id="hint" aria-hidden="true"><span class="t-pa">ਅੱਗੇ ਵੇਖਣ ਲਈ ਸਕ੍ਰੋਲ ਕਰੋ</span><span class="t-en">Scroll to continue</span><i></i></div>
+
+<div id="doors" role="dialog" aria-label="Invitation">
+  <div class="d-glow"></div>
+  <div class="door l"><div class="d-face"><div class="d-panel p1"></div><div class="d-panel p2"></div><div class="d-panel p3"></div><div class="d-edge"></div></div></div>
+  <div class="door r"><div class="d-face"><div class="d-panel p1"></div><div class="d-panel p2"></div><div class="d-panel p3"></div><div class="d-edge"></div></div></div>
+  <div class="d-arch" aria-hidden="true"></div>
+  <div class="d-center">
+    <p class="dc-top"><span class="t-pa">ਸ਼ੁਕਰਾਨੇ ਵਜੋਂ</span><span class="t-en">In Gratitude</span></p>
+    <button type="button" id="openBtn" aria-label="ਖੋਲ੍ਹੋ / Open invitation">
+      <span class="seal-halo"></span>
+      <span class="seal xl"></span>
+    </button>
+    <p class="dc-title"><span class="t-pa">ਸ਼੍ਰੀ ਆਖੰਡ ਪਾਠ ਸਾਹਿਬ</span><span class="t-en">Sri Akhand Path Sahib</span></p>
+    <p class="dc-tap"><span class="t-pa">ਸੱਦਾ ਖੋਲ੍ਹਣ ਲਈ ਛੂਹੋ</span><span class="t-en">Tap to open</span></p>
+  </div>
+  <button type="button" class="dlang" id="langBtn2" aria-label="English / ਪੰਜਾਬੀ"><span class="t-pa">English</span><span class="t-en">ਪੰਜਾਬੀ</span></button>
+</div>
+<noscript><p style="padding:2rem;text-align:center;color:#fff">ਕਿਰਪਾ ਕਰਕੇ JavaScript ਚਾਲੂ ਕਰੋ / Please enable JavaScript.</p></noscript>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<script>
+(() => {
+"use strict";
+const docEl = document.documentElement;
+const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const $ = (s, r=document) => r.querySelector(s);
+const $$ = (s, r=document) => Array.from(r.querySelectorAll(s));
+const clamp = (v,a=0,b=1) => Math.min(b, Math.max(a, v));
+const smooth = t => { t = clamp(t); return t*t*(3-2*t); };
+const lerp = (a,b,t) => a + (b-a)*t;
+function rng(seed){ let s = (seed>>>0) || 1; return () => { s ^= s<<13; s>>>=0; s ^= s>>17; s ^= s<<5; s>>>=0; return s/4294967296; }; }
+const N = 7, FOV = 42, TANH = Math.tan(FOV/2*Math.PI/180);
+let W = 0, H = 0, SEG = 1;
+const G = {};
+const sceneEls = $$(".scene");
+const sceneState = sceneEls.map(() => ({entered:false, typed:false, tl:null}));
+
+/* ================= GEOMETRY / LAYOUT ================= */
+function dims(){
+  W = window.innerWidth; H = window.innerHeight; const asp = W/H; G.asp = asp;
+  docEl.style.setProperty("--vh", (H/100)+"px");
+  G.AW = clamp(10*asp*0.58, 6.0, 9.6);
+  G.AH = clamp(G.AW/asp*0.8, 9.6, 12.5);
+  G.SIDE = G.AW*(asp < 0.8 ? 0.095 : 0.11);
+  G.TOP = G.AH*0.12; G.APEX = G.AH - G.TOP; G.a = G.AW/2 - G.SIDE; G.HS = G.APEX - Math.min(G.a*1.2, G.AH*0.3);
+  G.DEP = 0.9; G.camY = G.AH*0.5;
+  G.REST = Math.max((G.AH*1.08/2)/TANH, (G.AW*1.035/2)/(TANH*asp));
+  G.D = Math.max(20, G.REST + 3.5);
+  G.REST6 = -6*G.D - 8; G.GZ = G.REST6 - 44; G.PITCH6 = asp < 1 ? 0.2 : 0.12;
+  G.gs = clamp(44*TANH*asp*2*0.86/26, 0.45, 1);
+  { const dzN = 44 - 9*G.gs, vh = dzN*TANH*asp; G.nsX = -Math.min(12.5*G.gs, vh*0.8)/G.gs; G.nsDz = dzN; }
+  G.gTop = 13.6*G.gs;
+  SEG = Math.round(H*1.1);
+  $("#scroller").style.height = ((N-1)*SEG + H) + "px";
+}
+// projection for the resting camera (looking down -z from height camY, optional pitch)
+function proj(x, y, dz, pitch=0){
+  const sx = W/2 + x/(dz*TANH*G.asp)*W/2;
+  const ang = Math.atan2(y - G.camY, dz) - pitch;
+  const sy = H/2 - Math.tan(ang)/TANH*H/2;
+  return [sx, sy];
+}
+function layoutScenes(){
+  const dz = G.REST - G.DEP/2;
+  const [l] = proj(-G.a*0.96, 0, dz), [r] = proj(G.a*0.96, 0, dz);
+  const [, t] = proj(0, G.HS + (G.APEX - G.HS)*0.28, dz), [, b] = proj(0, 0.3, dz);
+  const top = Math.max(t, 54), bot = Math.min(b, H - 8);
+  G.box = {x:l, y:top, w:r-l, h:bot-top};
+  let [, gt] = proj(0, G.gTop, 44 - 4*G.gs, G.PITCH6);
+  if (G.asp < 1){ const [, nt] = proj(0, 21.4*G.gs, G.nsDz, G.PITCH6); gt = Math.min(gt, nt); }
+  const t6 = Math.max(56, H*0.065), b6 = Math.max(t6 + H*0.36, Math.min(gt - 8, H*0.62));
+  G.box6 = {x: W*0.05, y: t6, w: W*0.9, h: b6 - t6};
+  sceneEls.forEach((el, i) => { const bx = i === N-1 ? G.box6 : G.box;
+    el.style.left = bx.x+"px"; el.style.top = bx.y+"px"; el.style.width = bx.w+"px"; el.style.height = bx.h+"px"; });
+  fitScenes();
+}
+function fitScenes(){
+  sceneEls.forEach((sc, i) => { const inner = sc.firstElementChild; inner.style.transform = "none";
+    const bx = i === N-1 ? G.box6 : G.box; if (!bx) return; const h = inner.scrollHeight, w = inner.scrollWidth;
+    const f = Math.min(1, (bx.h - 4)/h, bx.w/w); inner.style.transform = f < 1 ? `scale(${f.toFixed(3)})` : "none"; });
+}
+// cusped (multifoil) pointed arch, y up; left half from spring to apex
+function archCurve(p, off=0, cusp=true, n=90){
+  const h = p.APEX - p.HS, a = p.a, r = (a*a + h*h)/(2*a), cx = -a + r;
+  const thA = Math.atan2(h, -cx), lobes = 4, c = a*0.085, out = [];
+  for (let k=0;k<=n;k++){ const s = k/n, th = Math.PI + (thA - Math.PI)*s, u = (s*lobes) % 1;
+    const rr = r + (cusp ? c*Math.sin(Math.PI*u) : 0) + off; out.push([cx + rr*Math.cos(th), p.HS + rr*Math.sin(th)]); }
+  return out;
+}
+function openingPoly(p, off=0, cusp=true){
+  const L = archCurve(p, off, cusp);
+  return [[-p.a-off, 0], ...L, ...L.slice(0,-1).reverse().map(([x,y]) => [-x,y]), [p.a+off, 0]];
+}
+
+/* ================= SVG ORNAMENTS ================= */
+let uid = 0;
+function sealSVG(){
+  const id = "sg"+(uid++); let petals = "";
+  for (let k=0;k<16;k++) petals += `<path d="M50 2.5C56.5 9 56.5 15.5 50 21C43.5 15.5 43.5 9 50 2.5Z" transform="rotate(${k*22.5} 50 50)"/>`;
+  let dots = ""; for (let k=0;k<16;k++){ const a = (k+0.5)*Math.PI/8; dots += `<circle cx="${(50+35.5*Math.sin(a)).toFixed(2)}" cy="${(50-35.5*Math.cos(a)).toFixed(2)}" r="1.3"/>`; }
+  return `<svg viewBox="0 0 100 100" aria-hidden="true"><defs>
+  <radialGradient id="${id}a" cx="45%" cy="35%" r="70%"><stop offset="0" stop-color="#fff5d6"/><stop offset=".5" stop-color="#ebc77f"/><stop offset="1" stop-color="#a66d20"/></radialGradient>
+  <radialGradient id="${id}b" cx="50%" cy="40%" r="60%"><stop offset="0" stop-color="#22357a"/><stop offset="1" stop-color="#091330"/></radialGradient>
+  <linearGradient id="${id}c" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff3cf"/><stop offset=".6" stop-color="#efc777"/><stop offset="1" stop-color="#c58a35"/></linearGradient></defs>
+  <g fill="url(#${id}a)">${petals}</g><g fill="#fbe7b5">${dots}</g>
+  <circle cx="50" cy="50" r="31.5" fill="url(#${id}a)"/><circle cx="50" cy="50" r="28" fill="url(#${id}b)" stroke="#fff0c8" stroke-width=".7"/>
+  <circle cx="50" cy="50" r="25.2" fill="none" stroke="#e9c57e" stroke-width=".55" stroke-dasharray="1.1 1.9"/>
+  <text x="50" y="62" text-anchor="middle" font-family="'Noto Serif Gurmukhi',serif" font-size="31" font-weight="600" fill="url(#${id}c)">ੴ</text></svg>`;
+}
+function khandaD(){ return "M50 4L55.5 19.5L54.3 66L58 69.5L52.6 71.5L52.6 84L47.4 84L47.4 71.5L42 69.5L45.7 66L44.5 19.5Z M50 33a21 21 0 1 1 0 42a21 21 0 1 1 0-42ZM50 39.5a14.5 14.5 0 1 0 0 29a14.5 14.5 0 1 0 0-29Z M63 90C38 84 21 67 22 38C27 60 41 75 66 83Z M37 90C62 84 79 67 78 38C73 60 59 75 34 83Z M61 81.5L70 93L66.5 95L58.5 84Z M39 81.5L30 93L33.5 95L41.5 84Z"; }
+function khandaSVG(fill){ return `<svg viewBox="0 0 100 100" aria-hidden="true"><path fill="${fill}" fill-rule="evenodd" d="${khandaD()}"/></svg>`; }
+function feetSVG(){
+  const foot = (tx, ty, rot, m) => `<g transform="translate(${tx} ${ty}) rotate(${rot}) scale(${m} 1)">
+    <path d="M0,-8C6.5,-8 8.5,-1 7.6,6C6.8,13 4,19 0,19C-4,19 -6.6,13.5 -6.8,6C-7.2,-1 -5.5,-8 0,-8Z"/>
+    <circle cx="-4.6" cy="-12.6" r="2.7"/><circle cx="-0.6" cy="-14.6" r="2.2"/><circle cx="3.1" cy="-14.2" r="1.9"/><circle cx="6.1" cy="-12.4" r="1.6"/><circle cx="8.2" cy="-9.6" r="1.35"/></g>`;
+  return `<svg viewBox="0 0 76 52"><defs><linearGradient id="ftg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff0c8"/><stop offset="1" stop-color="#e6b766"/></linearGradient></defs>
+  <g fill="url(#ftg)" style="filter:drop-shadow(0 0 6px rgba(247,179,92,.6))"><g class="ft f1">${foot(24,30,-10,-1)}</g><g class="ft f2">${foot(52,22,10,1)}</g></g></svg>`;
+}
+function ornSVG(){ return `<svg viewBox="0 0 120 22" aria-hidden="true"><g fill="none" stroke="#b5843a" stroke-width="1.1" stroke-linecap="round"><path d="M4 11H44"/><path d="M76 11H116"/><path d="M44 11C50 3 56 3 60 11C64 19 70 19 76 11"/><path d="M44 11C50 19 56 19 60 11C64 3 70 3 76 11"/></g><g fill="#c98b35"><path d="M60 5L64 11L60 17L56 11Z"/><circle cx="4" cy="11" r="1.6"/><circle cx="116" cy="11" r="1.6"/><circle cx="34" cy="11" r="1.2"/><circle cx="86" cy="11" r="1.2"/></g></svg>`; }
+function diyaIcon(){ return `<svg viewBox="0 0 40 40"><defs><radialGradient id="dfl" cx="50%" cy="70%" r="60%"><stop offset="0" stop-color="#fffbe6"/><stop offset=".45" stop-color="#ffd166"/><stop offset="1" stop-color="#f08a24"/></radialGradient></defs><path d="M20 4C24 11 25 15 20 21C15 15 16 11 20 4Z" fill="url(#dfl)" style="filter:drop-shadow(0 0 4px #ffb347)"/><path d="M5 24C10 32 30 32 35 24C30 27 10 27 5 24Z" fill="#e9c57e"/><path d="M5 24C9 35 31 35 35 24" fill="none" stroke="#fbe7b5" stroke-width="1.6"/><path d="M15 33H25L23 36H17Z" fill="#b5843a"/></svg>`; }
+function langarIcon(){ return `<svg viewBox="0 0 40 40" fill="none" stroke="#fbe7b5" stroke-width="1.6" stroke-linecap="round"><path d="M14 6C12 9 16 10 14 13M20 4C18 8 22 9 20 13M26 6C24 9 28 10 26 13" stroke="#f7b35c" stroke-width="1.3"/><path d="M5 19H35"/><path d="M7 19C8 28 13 32 20 32C27 32 32 28 33 19" fill="rgba(233,197,126,.25)"/><path d="M13 35H27"/></svg>`; }
+function pinSVG(){ return `<svg viewBox="0 0 30 30"><path d="M15 28S6 19.5 6 12.5a9 9 0 0 1 18 0C24 19.5 15 28 15 28Z" fill="#e8892b" stroke="#fbe7b5" stroke-width="1.2"/><circle cx="15" cy="12.5" r="3.4" fill="#fbe7b5"/></svg>`; }
+function panelSVG(){
+  let p = ""; for (let k=0;k<8;k++) p += `<path d="M50 50C44 40 44 26 50 16C56 26 56 40 50 50Z" transform="rotate(${k*45} 50 50)"/>`;
+  let q = ""; for (let k=0;k<8;k++) q += `<path d="M50 50C47 44 47 36 50 30C53 36 53 44 50 50Z" transform="rotate(${k*45+22.5} 50 50)"/>`;
+  return `<svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" aria-hidden="true"><g fill="rgba(255,240,200,.22)" stroke="#6b4210" stroke-width="1" stroke-opacity=".55">${p}</g><g fill="rgba(110,66,16,.25)">${q}</g><circle cx="50" cy="50" r="6" fill="#f6dfa2" stroke="#6b4210" stroke-width=".8"/><circle cx="50" cy="50" r="38" fill="none" stroke="#6b4210" stroke-opacity=".4" stroke-dasharray="2 3"/></svg>`;
+}
+function doorArch(){
+  const m = Math.max(14, W*0.05), a = W/2 - m, hs = H*0.68, apex = H*0.93, P = {a, HS:hs, APEX:apex};
+  const pts = openingPoly(P, 0, true).map(([x,y]) => [W/2 + x, H - y]);
+  const d = `M0 0H${W}V${H}H0Z M` + pts.map(p => p[0].toFixed(1)+" "+p[1].toFixed(1)).join("L") + "Z";
+  const trim = "M" + openingPoly(P, 4, true).map(([x,y]) => (W/2+x).toFixed(1)+" "+(H-y).toFixed(1)).join("L");
+  $(".d-arch").innerHTML = `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none"><defs><linearGradient id="dag" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fbf3e0"/><stop offset="1" stop-color="#e8d6b0"/></linearGradient></defs>
+  <path d="${d}" fill="url(#dag)" fill-rule="evenodd"/><path d="${trim}" fill="none" stroke="#c99645" stroke-width="3"/>
+  <rect x="${m*0.35}" y="${m*0.35}" width="${W-m*0.7}" height="${H-m*0.7}" fill="none" stroke="#c99645" stroke-width="1.5"/></svg>`;
+}
+
+/* ================= THREE WORLD ================= */
+let R = null, scene = null, camera = null, envTex = null;
+const U = {time:{value:0}};
+let archGroup = null, flames = [], floaters = [], lightsWarm = [], rays = [], fan = null, petals = null, dust = null, flag = null, skyMat = null, garland = null;
+let FLAME = null, GLOW = null;
+function canvasTex(w, h, draw, srgb=true){
+  const c = document.createElement("canvas"); c.width = w; c.height = h; const x = c.getContext("2d"); draw(x, w, h);
+  const t = new THREE.CanvasTexture(c); if (srgb) t.encoding = THREE.sRGBEncoding; if (R) t.anisotropy = Math.min(8, R.capabilities.getMaxAnisotropy()); return t;
+}
+function glowTex(stops){ return canvasTex(128, 128, (x) => { const g = x.createRadialGradient(64,64,0,64,64,64); stops.forEach(([o,c]) => g.addColorStop(o,c)); x.fillStyle = g; x.fillRect(0,0,128,128); }); }
+function flameTex(){ return canvasTex(64, 128, (x) => {
+  const g = x.createRadialGradient(32, 92, 2, 32, 80, 52); g.addColorStop(0, "rgba(255,255,240,1)"); g.addColorStop(0.25, "rgba(255,226,140,1)"); g.addColorStop(0.55, "rgba(255,150,40,.85)"); g.addColorStop(1, "rgba(255,90,0,0)");
+  x.fillStyle = g; x.beginPath(); x.moveTo(32, 4); x.bezierCurveTo(48, 40, 58, 70, 54, 96); x.bezierCurveTo(50, 122, 14, 122, 10, 96); x.bezierCurveTo(6, 70, 16, 40, 32, 4); x.fill(); }); }
+
+function paintFacade(){
+  const cw = 1024, ch = Math.min(2048, Math.round(1024*G.AH/G.AW));
+  const X = x => (x/G.AW + 0.5)*cw, Y = y => (1 - y/G.AH)*ch, S = u => u/G.AW*cw;
+  const r = rng(77);
+  return canvasTex(cw, ch, (x) => {
+    const g = x.createLinearGradient(0, 0, 0, ch); g.addColorStop(0, "#fbf4e3"); g.addColorStop(1, "#efe1c2"); x.fillStyle = g; x.fillRect(0,0,cw,ch);
+    x.lineCap = "round";
+    for (let k=0;k<26;k++){ x.strokeStyle = `rgba(150,135,110,${0.05 + r()*0.07})`; x.lineWidth = 0.6 + r()*1.6; x.beginPath(); let px = r()*cw, py = r()*ch; x.moveTo(px, py);
+      for (let s=0;s<4;s++){ const nx = px + (r()-0.5)*cw*0.5, ny = py + (r()-0.3)*ch*0.25; x.quadraticCurveTo(px + (r()-0.5)*200, py + (r()-0.5)*200, nx, ny); px = nx; py = ny; } x.stroke(); }
+    const gold = (w, a=1) => { x.strokeStyle = `rgba(190,138,58,${a})`; x.lineWidth = w; };
+    gold(S(0.05)); x.strokeRect(S(0.1), S(0.1), cw - S(0.2), Y(0.36) - S(0.1));
+    gold(S(0.018), .8); x.strokeRect(S(0.2), S(0.2), cw - S(0.4), Y(0.36) - S(0.3));
+    x.fillStyle = "rgba(200,170,120,.25)"; x.fillRect(0, Y(0.36), cw, ch); gold(S(0.03)); x.beginPath(); x.moveTo(0, Y(0.36)); x.lineTo(cw, Y(0.36)); x.stroke();
+    [[0.17, 0.04, 1], [0.3, 0.016, .85]].forEach(([off, w, a]) => { gold(S(w), a); x.beginPath(); openingPoly(G, off, true).forEach(([px,py], k) => k ? x.lineTo(X(px), Y(py)) : x.moveTo(X(px), Y(py))); x.stroke(); });
+    // pillar panels with a climbing vine
+    [-1, 1].forEach(sd => {
+      const x0 = sd < 0 ? -G.AW/2 + 0.3 : G.a + 0.42, x1 = sd < 0 ? -G.a - 0.42 : G.AW/2 - 0.3;
+      if (x1 - x0 < 0.1) return;
+      const y0 = 0.6, y1 = G.HS - 0.5; gold(S(0.02), .9); x.strokeRect(X(x0), Y(y1), S(x1-x0), Y(y0) - Y(y1));
+      const mx = X((x0+x1)/2), amp = S((x1-x0)*0.25); x.strokeStyle = "rgba(170,120,50,.8)"; x.lineWidth = S(0.012); x.beginPath();
+      let first = true; for (let yy = Y(y0) - 6; yy > Y(y1) + 6; yy -= 2){ const ph = (Y(y0) - yy)/S(0.7)*Math.PI; const xx = mx + Math.sin(ph)*amp; if (first){ x.moveTo(xx, yy); first = false; } else x.lineTo(xx, yy); } x.stroke();
+      for (let k=0, yy = Y(y0) - S(0.35); yy > Y(y1) + S(0.2); yy -= S(0.35), k++){ const ph = (Y(y0) - yy)/S(0.7)*Math.PI; const xx = mx + Math.sin(ph)*amp;
+        x.fillStyle = k % 2 ? "rgba(232,137,43,.85)" : "rgba(84,120,70,.7)"; x.beginPath(); x.ellipse(xx + (k%2 ? amp*0.5 : -amp*0.5), yy, S(0.045), S(0.025), (k%2?-1:1)*0.6, 0, Math.PI*2); x.fill(); }
+    });
+    // spandrel rosettes + scrolls
+    [-1, 1].forEach(sd => {
+      const cx = X(sd*G.a*0.8), cy = Y(G.APEX - G.a*0.14), rr = S(Math.min(0.48, G.TOP*0.5, G.a*0.18));
+      x.save(); x.translate(cx, cy);
+      for (let k=0;k<12;k++){ x.rotate(Math.PI/6); x.fillStyle = k%2 ? "rgba(232,137,43,.9)" : "rgba(196,64,40,.75)"; x.beginPath(); x.ellipse(0, -rr*0.55, rr*0.16, rr*0.42, 0, 0, Math.PI*2); x.fill(); }
+      x.strokeStyle = "rgba(190,138,58,1)"; x.lineWidth = S(0.02); x.beginPath(); x.arc(0,0,rr,0,Math.PI*2); x.stroke();
+      x.fillStyle = "#1a2a62"; x.beginPath(); x.arc(0,0,rr*0.18,0,Math.PI*2); x.fill(); x.restore();
+      gold(S(0.014), .85);
+      for (let k=0;k<2;k++){ x.beginPath(); x.moveTo(cx + sd*rr*1.05, cy + (k ? rr*0.4 : -rr*0.4));
+        x.bezierCurveTo(cx + sd*rr*1.8, cy + (k ? rr*1.4 : -rr*1.2), cx + sd*rr*2.6, cy + (k ? rr*0.2 : -rr*0.1), cx + sd*rr*2.2, cy + (k ? rr*1.0 : -rr*0.8)); x.stroke(); }
+    });
+    // keystone medallion with Ik Onkar
+    const mr = S(Math.min(G.TOP*0.4, 0.52)), my = Y(G.APEX + G.TOP*0.5);
+    const mg = x.createRadialGradient(X(0) - mr*0.3, my - mr*0.3, 1, X(0), my, mr); mg.addColorStop(0, "#fff2c8"); mg.addColorStop(0.6, "#e2b665"); mg.addColorStop(1, "#a46b22");
+    x.fillStyle = mg; x.beginPath(); x.arc(X(0), my, mr, 0, Math.PI*2); x.fill();
+    x.fillStyle = "#13215a"; x.beginPath(); x.arc(X(0), my, mr*0.82, 0, Math.PI*2); x.fill();
+    x.fillStyle = "#f3d58e"; x.font = `600 ${Math.round(mr*1.05)}px 'Noto Serif Gurmukhi'`; x.textAlign = "center"; x.textBaseline = "middle"; x.fillText("ੴ", X(0), my + mr*0.06);
+    gold(S(0.012)); for (let k=0;k<2;k++){ const sd = k ? 1 : -1; x.beginPath(); x.moveTo(X(0) + sd*mr*1.15, my); x.bezierCurveTo(X(0) + sd*mr*2, my - mr*0.8, X(0) + sd*mr*2.8, my + mr*0.6, X(0) + sd*mr*3.6, my); x.stroke(); }
+  });
+}
+function onionDome(R0, segs=24){
+  const pts = []; for (let k=0;k<=24;k++){ const t = k/24; pts.push(new THREE.Vector2(Math.max(0.0001, R0*(1 + 0.45*Math.sin(Math.PI*t))*(1 - Math.pow(t, 1.6))), t*R0*1.35)); }
+  return new THREE.LatheGeometry(pts, segs);
+}
+function kalash(s){ const p = [[0.001,0],[0.12,0],[0.2,0.07],[0.13,0.17],[0.17,0.25],[0.07,0.36],[0.05,0.45],[0.09,0.5],[0.02,0.62],[0.001,0.7]].map(([a,b]) => new THREE.Vector2(a*s, b*s)); return new THREE.LatheGeometry(p, 16); }
+function addFlame(parent, x, y, z, s=1){
+  const f = new THREE.Sprite(new THREE.SpriteMaterial({map: FLAME, blending: THREE.AdditiveBlending, depthWrite: false, transparent: true}));
+  f.center.set(0.5, 0.15); f.scale.set(0.16*s, 0.3*s, 1); f.position.set(x, y, z);
+  const gw = new THREE.Sprite(new THREE.SpriteMaterial({map: GLOW, blending: THREE.AdditiveBlending, depthWrite: false, transparent: true, opacity: 0.5, color: 0xffb055}));
+  gw.scale.set(1.3*s, 1.3*s, 1); gw.position.set(x, y + 0.08*s, z);
+  parent.add(f); parent.add(gw); flames.push({f, gw, s, ph: Math.random()*10});
+}
+
+function buildArches(M){
+  const shape = new THREE.Shape(); const op = openingPoly(G, 0, true);
+  shape.moveTo(-G.AW/2, 0); shape.lineTo(-G.AW/2, G.AH); shape.lineTo(G.AW/2, G.AH); shape.lineTo(G.AW/2, 0);
+  for (let k = op.length-1; k >= 0; k--) shape.lineTo(op[k][0], op[k][1]);
+  shape.lineTo(-G.AW/2, 0);
+  const geo = new THREE.ExtrudeGeometry(shape, {depth: G.DEP, bevelEnabled: true, bevelThickness: 0.04, bevelSize: 0.03, bevelSegments: 2, curveSegments: 4});
+  geo.translate(0, 0, -G.DEP/2);
+  const faceTex = paintFacade(); faceTex.repeat.set(1/G.AW, 1/G.AH); faceTex.offset.set(0.5, 0);
+  const faceMat = new THREE.MeshStandardMaterial({map: faceTex, roughness: 0.5, metalness: 0, emissive: 0xffffff, emissiveMap: faceTex, emissiveIntensity: 0.14});
+  const sideMat = M.marble;
+  const trimGeo = new THREE.TubeGeometry(new THREE.CatmullRomCurve3(op.map(([x,y]) => new THREE.Vector3(x, y, G.DEP/2 + 0.05))), 420, 0.065, 6, false);
+  const rim = new THREE.CurvePath(); const e = 0.1, zf = G.DEP/2 + 0.04;
+  const rc = [[-G.AW/2+e, 0.36],[-G.AW/2+e, G.AH-e],[G.AW/2-e, G.AH-e],[G.AW/2-e, 0.36]];
+  for (let k=0;k<3;k++) rim.add(new THREE.LineCurve3(new THREE.Vector3(rc[k][0], rc[k][1], zf), new THREE.Vector3(rc[k+1][0], rc[k+1][1], zf)));
+  const rimGeo = new THREE.TubeGeometry(rim, 120, 0.05, 6, false);
+  const parapet = new THREE.BoxGeometry(G.AW + 0.24, 0.22, G.DEP + 0.24), pband = new THREE.BoxGeometry(G.AW + 0.3, 0.05, G.DEP + 0.3);
+  const plinth = new THREE.BoxGeometry(G.AW + 0.2, 0.36, G.DEP + 0.3);
+  const RL = Math.min(0.62, G.a*0.24);
+  const domeS = onionDome(0.34), domeL = onionDome(RL), drumS = new THREE.CylinderGeometry(0.3, 0.32, 0.36, 20), drumL = new THREE.CylinderGeometry(RL*0.92, RL*0.96, 0.4, 24);
+  const kS = kalash(0.55), kL = kalash(0.85);
+  // garland points: follows the arch outside the cusps, then hangs down both pillars
+  const gpts = [];
+  const gl = archCurve(G, G.a*0.085 + 0.3, false, 400);
+  const full = [...gl, ...gl.slice(0,-1).reverse().map(([x,y]) => [-x,y])];
+  let acc = 0; for (let k=1;k<full.length;k++){ acc += Math.hypot(full[k][0]-full[k-1][0], full[k][1]-full[k-1][1]); if (acc >= 0.16){ acc = 0; gpts.push([full[k][0], full[k][1]]); } }
+  [-1,1].forEach(sd => { const gx = sd*(G.a + 0.3); for (let y = G.HS - 0.16; y > G.HS*0.5; y -= 0.16) gpts.push([gx, y]); gpts.push([gx, G.HS*0.5 - 0.14, 1]); });
+  const beadGeo = new THREE.IcosahedronGeometry(0.095, 1);
+  const beadMat = new THREE.MeshStandardMaterial({roughness: 0.85, metalness: 0, emissive: 0x401800, emissiveIntensity: 0.6});
+  garland = new THREE.InstancedMesh(beadGeo, beadMat, gpts.length*N);
+  const cols = [0xff8a14, 0xffb81c, 0xf26a0a, 0xffc93a].map(c => new THREE.Color(c));
+  const mtx = new THREE.Matrix4(), q = new THREE.Quaternion(), sv = new THREE.Vector3(), pv = new THREE.Vector3(), eu = new THREE.Euler(); const rr = rng(9); let n = 0;
+  archGroup = new THREE.Group();
+  for (let i=0;i<N;i++){
+    const z = -i*G.D; const g = new THREE.Group(); g.position.z = z;
+    g.add(new THREE.Mesh(geo, [faceMat, sideMat]));
+    g.add(new THREE.Mesh(trimGeo, M.gold)); g.add(new THREE.Mesh(rimGeo, M.gold));
+    const pp = new THREE.Mesh(parapet, sideMat); pp.position.y = G.AH + 0.11; g.add(pp);
+    const pg = new THREE.Mesh(pband, M.gold); pg.position.y = G.AH + 0.245; g.add(pg);
+    const pl = new THREE.Mesh(plinth, sideMat); pl.position.y = 0.18; g.add(pl);
+    [-1, 1].forEach(sd => { const cx = sd*(G.AW/2 - 0.36);
+      const dr = new THREE.Mesh(drumS, sideMat); dr.position.set(cx, G.AH + 0.45, 0); g.add(dr);
+      const dm = new THREE.Mesh(domeS, sideMat); dm.position.set(cx, G.AH + 0.63, 0); g.add(dm);
+      const k = new THREE.Mesh(kS, M.gold); k.position.set(cx, G.AH + 0.63 + 0.34*1.35 - 0.03, 0); g.add(k); });
+    const dl = new THREE.Mesh(drumL, sideMat); dl.position.set(0, G.AH + 0.45, 0); g.add(dl);
+    const dL = new THREE.Mesh(domeL, M.gold); dL.position.set(0, G.AH + 0.65, 0); g.add(dL);
+    const kl = new THREE.Mesh(kL, M.gold); kl.position.set(0, G.AH + 0.65 + RL*1.35 - 0.04, 0); g.add(kl);
+    [-1, 1].forEach(sd => { const dx = sd*(G.a + G.SIDE*0.5), dz = G.DEP/2 + 0.42;
+      const d = new THREE.Mesh(M.diyaGeo, M.clay); d.position.set(dx, 0.0, dz); g.add(d); addFlame(g, dx, 0.12, dz, 1); });
+    if (G.asp > 0.9) [-1, 1].forEach(sd => { const sx = sd*(G.AW/2 + 1.5);
+      const st = new THREE.Mesh(M.standGeo, M.gold); st.position.set(sx, 0, 0.6); g.add(st);
+      const d = new THREE.Mesh(M.diyaGeo, M.clay); d.scale.setScalar(1.5); d.position.set(sx, 1.9, 0.6); g.add(d); addFlame(g, sx, 2.08, 0.6, 1.4); });
+    archGroup.add(g);
+    gpts.forEach(([x, y, tassel]) => { const s = tassel ? 1.5 : 0.85 + rr()*0.35; eu.set(rr()*6, rr()*6, rr()*6); q.setFromEuler(eu); sv.set(s, s, s); pv.set(x, y, z + G.DEP/2 + 0.12);
+      mtx.compose(pv, q, sv); garland.setMatrixAt(n, mtx); garland.setColorAt(n, cols[Math.floor(rr()*4)]); n++; });
+  }
+  garland.instanceMatrix.needsUpdate = true; if (garland.instanceColor) garland.instanceColor.needsUpdate = true;
+  scene.add(archGroup); scene.add(garland);
+}
+
+function buildFloor(M){
+  const tex = canvasTex(512, 512, (x) => {
+    x.fillStyle = "#0f1b42"; x.fillRect(0,0,512,512);
+    const r = rng(5); for (let k=0;k<14;k++){ x.strokeStyle = `rgba(120,140,200,${0.04+r()*0.05})`; x.lineWidth = 1+r()*2; x.beginPath(); x.moveTo(r()*512, r()*512); x.bezierCurveTo(r()*512, r()*512, r()*512, r()*512, r()*512, r()*512); x.stroke(); }
+    x.strokeStyle = "rgba(214,170,90,.55)"; x.lineWidth = 3; x.strokeRect(0,0,512,512);
+    x.strokeStyle = "rgba(214,170,90,.35)"; x.lineWidth = 2; x.beginPath(); x.moveTo(256, 30); x.lineTo(482, 256); x.lineTo(256, 482); x.lineTo(30, 256); x.closePath(); x.stroke();
+    x.fillStyle = "rgba(214,170,90,.45)"; x.beginPath(); x.arc(256,256,14,0,Math.PI*2); x.fill();
+  });
+  tex.wrapS = tex.wrapT = THREE.RepeatWrapping;
+  const z1 = 70, z2 = -6*G.D - 3;
+  tex.repeat.set(240/4, (z1-z2)/4);
+  const fm = new THREE.MeshStandardMaterial({map: tex, roughness: 0.62, metalness: 0.12, envMap: envTex, envMapIntensity: 0.35});
+  const fl = new THREE.Mesh(new THREE.PlaneGeometry(240, z1 - z2), fm); fl.rotation.x = -Math.PI/2; fl.position.z = (z1 + z2)/2; scene.add(fl);
+  // saffron runner
+  const rt = canvasTex(128, 512, (x) => { const g = x.createLinearGradient(0,0,128,0); g.addColorStop(0, "#7a2a08"); g.addColorStop(0.12, "#c2560f"); g.addColorStop(0.5, "#e07a1c"); g.addColorStop(0.88, "#c2560f"); g.addColorStop(1, "#7a2a08"); x.fillStyle = g; x.fillRect(0,0,128,512);
+    x.fillStyle = "#e9c57e"; x.fillRect(10,0,4,512); x.fillRect(114,0,4,512); x.fillStyle = "rgba(255,220,150,.35)"; for (let y=0;y<512;y+=64){ x.beginPath(); x.moveTo(64, y+12); x.lineTo(84, y+32); x.lineTo(64, y+52); x.lineTo(44, y+32); x.closePath(); x.fill(); } });
+  rt.wrapT = THREE.RepeatWrapping; const rl = z1 - z2; rt.repeat.set(1, rl/2.4);
+  const run = new THREE.Mesh(new THREE.PlaneGeometry(Math.min(2.2, G.a*0.9), rl), new THREE.MeshStandardMaterial({map: rt, roughness: 0.9, emissive: 0x2a0d00, emissiveIntensity: 0.6}));
+  run.rotation.x = -Math.PI/2; run.position.set(0, 0.012, (z1+z2)/2); scene.add(run);
+  // courtyard around the sarovar (a hole is left for the water so the reflection shows)
+  const wz1 = z2, wz2 = G.GZ + 7.5, ww = 34;
+  const ct = tex.clone(); ct.needsUpdate = true; const cm = fm.clone(); cm.map = ct;
+  [[-ww/2 - 60, (wz1+wz2)/2, 120, wz1 - wz2], [ww/2 + 60, (wz1+wz2)/2, 120, wz1 - wz2], [0, wz2 - 60, 260, 120]].forEach(([x, z, w, d]) => {
+    const t2 = tex.clone(); t2.needsUpdate = true; t2.repeat.set(w/4, d/4); const m2 = fm.clone(); m2.map = t2;
+    const p = new THREE.Mesh(new THREE.PlaneGeometry(w, d), m2); p.rotation.x = -Math.PI/2; p.position.set(x, 0, z); scene.add(p); });
+  const water = new THREE.Mesh(new THREE.PlaneGeometry(ww, wz1 - wz2), new THREE.MeshBasicMaterial({color: 0x050b1e, transparent: true, opacity: 0.55, depthWrite: false}));
+  water.rotation.x = -Math.PI/2; water.position.set(0, 0.03, (wz1+wz2)/2); scene.add(water);
+  [[0, wz1 - 0.3, ww + 1.2, 0.6], [0, wz2 + 0.3, ww + 1.2, 0.6], [-ww/2 - 0.3, (wz1+wz2)/2, 0.6, wz1 - wz2], [ww/2 + 0.3, (wz1+wz2)/2, 0.6, wz1 - wz2]].forEach(([x,z,w,d]) => {
+    const b = new THREE.Mesh(new THREE.BoxGeometry(w, 0.25, d), M.marble); b.position.set(x, 0.12, z); scene.add(b); });
+  for (let k=0;k<14;k++){ const x = -ww/2 + 1.5 + k*(ww-3)/13; const d = new THREE.Mesh(M.diyaGeo, M.clay); d.position.set(x, 0.25, wz1 - 0.3); scene.add(d); addFlame(scene, x, 0.37, wz1 - 0.3, 1.1); }
+}
+function buildGurdwara(M){
+  const g = new THREE.Group();
+  const white = new THREE.MeshStandardMaterial({color: 0xf7f1e4, roughness: 0.55, emissive: 0x6a4a22, emissiveIntensity: 0.35});
+  const winTex = (cols, w, h) => canvasTex(512, Math.round(512*h/w), (x, cw, ch) => {
+    x.fillStyle = "#f4ecd9"; x.fillRect(0,0,cw,ch);
+    const cellW = cw/cols;
+    for (let c=0;c<cols;c++){
+      const cx = (c+0.5)*cellW, top = ch*0.26, bot = ch*0.92, hw = cellW*0.26;
+      const grd = x.createLinearGradient(0, top, 0, bot); grd.addColorStop(0, "#ffd889"); grd.addColorStop(1, "#ff9c33");
+      x.fillStyle = grd; x.beginPath(); x.moveTo(cx - hw, bot); x.lineTo(cx - hw, top + hw); x.quadraticCurveTo(cx - hw, top, cx, top - hw*0.5); x.quadraticCurveTo(cx + hw, top, cx + hw, top + hw); x.lineTo(cx + hw, bot); x.closePath(); x.fill();
+      x.strokeStyle = "rgba(190,138,58,.9)"; x.lineWidth = 3; x.stroke(); }
+    x.fillStyle = "rgba(190,138,58,.8)"; x.fillRect(0, 0, cw, 5); x.fillRect(0, ch-5, cw, 5);
+  });
+  const box = (w, h, d, y, cols) => { const tex = winTex(cols, w, h); const wm = white.clone(); wm.map = tex; wm.emissiveMap = tex; wm.emissive = new THREE.Color(0xffffff); wm.emissiveIntensity = 0.5;
+    const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), [white, white, white, white, wm, white]); m.position.set(0, y + h/2, 0); g.add(m); };
+  const plat = new THREE.Mesh(new THREE.BoxGeometry(26, 0.9, 13), white); plat.position.y = 0.45; g.add(plat);
+  const step = new THREE.Mesh(new THREE.BoxGeometry(8, 0.45, 1.2), white); step.position.set(0, 0.22, 6.9); g.add(step);
+  box(19, 4.2, 9, 0.9, 7); box(13, 3.2, 6.6, 5.1, 5);
+  [[19.4, 5.1, 9.4], [13.4, 8.3, 7]].forEach(([w, y, d]) => { const b = new THREE.Mesh(new THREE.BoxGeometry(w, 0.18, d), M.gold); b.position.y = y; g.add(b); });
+  const drum = new THREE.Mesh(new THREE.CylinderGeometry(2.4, 2.5, 1.0, 32), white); drum.position.y = 8.8; g.add(drum);
+  const dome = new THREE.Mesh(onionDome(2.55, 40), M.gold); dome.position.y = 9.3; g.add(dome);
+  const k = new THREE.Mesh(kalash(1.9), M.gold); k.position.y = 9.3 + 2.55*1.35 - 0.12; g.add(k);
+  const corner = (x, y, z, s) => { const dr = new THREE.Mesh(new THREE.CylinderGeometry(0.55*s, 0.6*s, 0.9*s, 16), white); dr.position.set(x, y + 0.45*s, z); g.add(dr);
+    const dm = new THREE.Mesh(onionDome(0.75*s, 20), white); dm.position.set(x, y + 0.9*s, z); g.add(dm);
+    const kk = new THREE.Mesh(kalash(0.8*s), M.gold); kk.position.set(x, y + 0.9*s + 0.75*s*1.35 - 0.06, z); g.add(kk); };
+  [[-9, 4], [9, 4], [-9, -4], [9, -4]].forEach(([x,z]) => corner(x, 5.1, z, 1.1));
+  [[-6.1, 3], [6.1, 3]].forEach(([x,z]) => corner(x, 8.3, z, 0.9));
+  const court = new THREE.Group(); court.add(g);
+  const refl = g.clone(); refl.scale.y = -1; refl.position.y = -0.02; court.add(refl);
+  // Nishan Sahib
+  const ns = new THREE.Group(); ns.position.set(G.nsX, 0, 9);
+  const base = new THREE.Mesh(new THREE.CylinderGeometry(0.9, 1.1, 0.9, 8), white); base.position.y = 0.45; ns.add(base);
+  const pole = new THREE.Mesh(new THREE.CylinderGeometry(0.1, 0.14, 19, 12), new THREE.MeshStandardMaterial({color: 0xe07a1c, roughness: 0.7, emissive: 0x401400, emissiveIntensity: 0.6})); pole.position.y = 10.4; ns.add(pole);
+  const kt = canvasTex(128, 128, (x) => { x.scale(1.28, 1.28); x.fillStyle = "#f2cf86"; x.fill(new Path2D(khandaD()), "evenodd"); });
+  const kh = new THREE.Mesh(new THREE.PlaneGeometry(1.5, 1.5), new THREE.MeshBasicMaterial({map: kt, transparent: true, side: THREE.DoubleSide, depthWrite: false})); kh.position.y = 20.55; ns.add(kh);
+  const ft = canvasTex(256, 160, (x) => { const g2 = x.createLinearGradient(0,0,0,160); g2.addColorStop(0, "#f39a33"); g2.addColorStop(1, "#d9690f"); x.fillStyle = g2; x.fillRect(0,0,256,160);
+    x.save(); x.translate(128 - 66, 80 - 66); x.scale(1.32, 1.32); x.fillStyle = "#13215a"; x.fill(new Path2D(khandaD()), "evenodd"); x.restore(); });
+  const fgeo = new THREE.PlaneGeometry(3.6, 2.25, 24, 8); fgeo.translate(1.8, 0, 0);
+  const fmesh = new THREE.Mesh(fgeo, new THREE.MeshStandardMaterial({map: ft, side: THREE.DoubleSide, roughness: 0.8, emissive: 0xffffff, emissiveMap: ft, emissiveIntensity: 0.35}));
+  fmesh.position.set(0.1, 18.4, 0); ns.add(fmesh); flag = {mesh: fmesh, base: Float32Array.from(fgeo.attributes.position.array)};
+  court.add(ns); const nsr = ns.clone(); nsr.scale.y = -1; nsr.position.y = -0.02; court.add(nsr);
+  // soft glory behind the dome
+  const halo = new THREE.Sprite(new THREE.SpriteMaterial({map: GLOW, color: 0xffa64a, blending: THREE.AdditiveBlending, transparent: true, depthWrite: false, opacity: 0.4}));
+  halo.scale.set(36, 30, 1); halo.position.set(0, 9, -9); court.add(halo);
+  fan = new THREE.Group(); fan.position.set(0, 11, -8);
+  for (let k=0;k<11;k++){ const m = new THREE.Mesh(M.rayGeoFan, M.rayMat.clone()); m.material.opacity = 0.07; m.scale.set(1.8, 42, 1); m.rotation.z = (k - 5)*0.26; fan.add(m); }
+  court.add(fan);
+  const wl = new THREE.PointLight(0xffb060, 2.4, 45*G.gs, 2); wl.position.set(0, 5, 13); court.add(wl);
+  court.scale.setScalar(G.gs); court.position.z = G.GZ; scene.add(court);
+}
+function buildSky(){
+  skyMat = new THREE.ShaderMaterial({side: THREE.BackSide, depthWrite: false, fog: false, uniforms: {warm: {value: 0.3}},
+    vertexShader: "varying vec3 vD; void main(){ vD = normalize(position); gl_Position = projectionMatrix*modelViewMatrix*vec4(position,1.0); gl_Position.z = gl_Position.w; }",
+    fragmentShader: `uniform float warm; varying vec3 vD; void main(){ float y = vD.y; vec3 top = vec3(0.004,0.008,0.032); vec3 hor = vec3(0.0045,0.0085,0.028);
+      hor = vec3(0.0065,0.011,0.042);
+      vec3 col = mix(hor, top, smoothstep(0.0, 0.6, y));
+      float w = pow(max(0.0, dot(normalize(vec3(vD.x*0.7, vD.y*1.6, vD.z)), vec3(0.0,0.08,-1.0))), 5.0);
+      col += vec3(0.55,0.2,0.04) * w * warm * (1.0 - smoothstep(0.0, 0.5, abs(y)));
+      col = mix(col, vec3(0.003,0.005,0.02), smoothstep(0.0, -0.25, y));
+      gl_FragColor = linearToOutputTexel(vec4(col,1.0)); }`});
+  const sky = new THREE.Mesh(new THREE.SphereGeometry(450, 32, 16), skyMat); sky.renderOrder = -10; sky.frustumCulled = false; scene.add(sky); G.sky = sky;
+  const n = 900, pos = new Float32Array(n*3), sz = new Float32Array(n), ph = new Float32Array(n); const r = rng(3);
+  for (let k=0;k<n;k++){ const u = r()*Math.PI*2, cy = 0.05 + Math.pow(r(), 0.8)*0.95, rr = Math.sqrt(1 - cy*cy);
+    pos[k*3] = Math.cos(u)*rr*400; pos[k*3+1] = cy*400; pos[k*3+2] = Math.sin(u)*rr*400; sz[k] = 1.2 + Math.pow(r(), 6)*4.2; ph[k] = r()*20; }
+  const sg = new THREE.BufferGeometry(); sg.setAttribute("position", new THREE.BufferAttribute(pos, 3)); sg.setAttribute("size", new THREE.BufferAttribute(sz, 1)); sg.setAttribute("ph", new THREE.BufferAttribute(ph, 1));
+  const sm = new THREE.ShaderMaterial({transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, fog: false, uniforms: {time: U.time, pr: {value: R.getPixelRatio()}},
+    vertexShader: "attribute float size; attribute float ph; uniform float time; uniform float pr; varying float vA; void main(){ vA = 0.55 + 0.45*sin(time*1.3 + ph*3.0); vec4 mv = modelViewMatrix*vec4(position,1.0); gl_PointSize = size*pr; gl_Position = projectionMatrix*mv; gl_Position.z = gl_Position.w*0.9999; }",
+    fragmentShader: "varying float vA; void main(){ vec2 c = gl_PointCoord - 0.5; float a = smoothstep(0.5, 0.0, length(c))*vA; gl_FragColor = vec4(vec3(1.0,0.93,0.8)*a, a); }"});
+  const stars = new THREE.Points(sg, sm); stars.renderOrder = -9; stars.frustumCulled = false; scene.add(stars); G.stars = stars;
+}
+function buildRays(M){
+  const rt = canvasTex(64, 256, (x) => { const g = x.createLinearGradient(0,0,64,0); g.addColorStop(0, "rgba(255,255,255,0)"); g.addColorStop(0.5, "rgba(255,255,255,1)"); g.addColorStop(1, "rgba(255,255,255,0)"); x.fillStyle = g; x.fillRect(0,0,64,256);
+    x.globalCompositeOperation = "destination-in"; const v = x.createLinearGradient(0,0,0,256); v.addColorStop(0, "rgba(0,0,0,0)"); v.addColorStop(0.15, "rgba(0,0,0,1)"); v.addColorStop(1, "rgba(0,0,0,0)"); x.fillStyle = v; x.fillRect(0,0,64,256); });
+  M.rayMat = new THREE.MeshBasicMaterial({map: rt, color: 0xffc070, transparent: true, opacity: 0.16, blending: THREE.AdditiveBlending, depthWrite: false, side: THREE.DoubleSide, fog: false});
+  M.rayGeo = new THREE.PlaneGeometry(1, 1); M.rayGeo.translate(0, -0.5, 0);
+  M.rayGeoFan = new THREE.PlaneGeometry(1, 1); M.rayGeoFan.translate(0, 0.5, 0);
+  // flip V for the fan so it is bright at the dome and fades outward
+  const uv = M.rayGeoFan.attributes.uv; for (let i=0;i<uv.count;i++) uv.setY(i, 1 - uv.getY(i));
+  const r = rng(11);
+  [0, 1].forEach(arch => { for (let k=0;k<6;k++){ const m = new THREE.Mesh(M.rayGeo, M.rayMat.clone());
+    const w = 0.6 + r()*1.4; m.scale.set(w, G.AH*1.9, 1); m.position.set((r()-0.5)*G.a*1.6 + 1.5, G.AH*1.45, -arch*G.D - G.D*0.42 - r()*3);
+    m.rotation.z = 0.28 + r()*0.12; m.material.opacity = 0.05 + r()*0.07; m.userData = {base: m.material.opacity, ph: r()*6}; scene.add(m); rays.push(m); } });
+}
+function buildFloaters(M){
+  const r = rng(21);
+  for (let k=0;k<28;k++){ const g = new THREE.Group();
+    const seg = Math.floor(r()*6); const z = -seg*G.D - 3 - r()*(G.D - 6);
+    const x = (r() < 0.5 ? -1 : 1)*(G.a*0.4 + r()*G.AW*0.9); const y = 1.6 + r()*(G.AH - 2.2);
+    g.add(new THREE.Mesh(M.diyaGeo, M.clay)); addFlame(g, 0, 0.1, 0, 1);
+    g.position.set(x, y, z); scene.add(g); floaters.push({g, y, ph: r()*6, sp: 0.4 + r()*0.5}); }
+}
+function buildDust(){
+  const n = 380, pos = new Float32Array(n*3), r = rng(31);
+  for (let k=0;k<n;k++){ pos[k*3] = (r()-0.5)*G.AW*2.2; pos[k*3+1] = r()*G.AH*1.2; pos[k*3+2] = 10 - r()*(6*G.D + 30); }
+  const g = new THREE.BufferGeometry(); g.setAttribute("position", new THREE.BufferAttribute(pos, 3));
+  dust = new THREE.Points(g, new THREE.PointsMaterial({map: GLOW, color: 0xffcf80, size: 0.09, transparent: true, opacity: 0.7, depthWrite: false, blending: THREE.AdditiveBlending, sizeAttenuation: true}));
+  scene.add(dust);
+}
+
+/* marigold petals */
+let burstPetals = () => {};
+function buildPetals(){
+  const pt = canvasTex(64, 64, (x) => { x.fillStyle = "#fff"; x.beginPath(); x.moveTo(32, 62); x.bezierCurveTo(4, 44, 8, 8, 32, 3); x.bezierCurveTo(56, 8, 60, 44, 32, 62); x.fill();
+    x.globalCompositeOperation = "source-atop"; const g = x.createRadialGradient(32, 58, 2, 32, 30, 36); g.addColorStop(0, "#ffd9a0"); g.addColorStop(1, "#ffffff"); x.fillStyle = g; x.fillRect(0,0,64,64); });
+  const geo = new THREE.PlaneGeometry(0.2, 0.24, 3, 1); const p = geo.attributes.position; for (let i=0;i<p.count;i++){ const x = p.getX(i); p.setZ(i, x*x*2.2); } geo.computeVertexNormals();
+  const MAX = 220; const mesh = new THREE.InstancedMesh(geo, new THREE.MeshLambertMaterial({map: pt, side: THREE.DoubleSide, alphaTest: 0.45, emissive: 0x552200}), MAX);
+  const cols = [0xff8a14, 0xffb21c, 0xf26a0a, 0xffc93a, 0xe8501a].map(c => new THREE.Color(c));
+  const P = []; const ambient = W < 600 ? 70 : 110;
+  for (let i=0;i<MAX;i++){ P.push({p: new THREE.Vector3(), v: new THREE.Vector3(), r: new THREE.Euler(Math.random()*6, Math.random()*6, Math.random()*6), w: new THREE.Vector3((Math.random()-.5)*3, (Math.random()-.5)*3, (Math.random()-.5)*2), s: 0.8 + Math.random()*0.6, alive: false, burst: false, ph: Math.random()*6}); mesh.setColorAt(i, cols[i % cols.length]); }
+  const mtx = new THREE.Matrix4(), q = new THREE.Quaternion(), sv = new THREE.Vector3(), zero = new THREE.Matrix4().makeScale(0,0,0);
+  function spawn(o, anywhere){ const cz = camera.position.z; o.p.set((Math.random()-0.5)*G.AW*1.8, anywhere ? Math.random()*G.AH*1.3 : G.AH*1.15 + Math.random()*3, cz - 4.5 - Math.random()*Math.min(40, G.D*1.8)); o.v.set(0.2 + Math.random()*0.3, -(0.55 + Math.random()*0.5), 0); o.alive = true; o.burst = false; }
+  // a gentle shower of marigold petals from above the current view
+  burstPetals = (n = 90) => { let c = 0; const cz = camera.position.z;
+    for (let i=ambient;i<MAX && c<n;i++){ const o = P[i]; if (o.alive) continue; const dz = 6 + Math.random()*10, vh = dz*TANH, vw = vh*G.asp;
+      o.p.set(camera.position.x + (Math.random()-0.5)*2.2*vw, camera.position.y + vh*(1.05 + Math.random()*1.6), cz - dz); o.v.set((Math.random()-0.5)*0.6, -(1.1 + Math.random()*1.1), 0.15); o.alive = true; o.burst = true; c++; } };
+  let last = performance.now(), seeded = false;
+  petals = (push) => { const now = performance.now(), dt = Math.min(0.05, (now - last)/1000); last = now; const t = now/1000; const cz = camera.position.z;
+    if (!seeded){ seeded = true; for (let i=0;i<ambient;i++) spawn(P[i], true); }
+    for (let i=0;i<MAX;i++){ const o = P[i]; if (!o.alive){ mesh.setMatrixAt(i, zero); continue; }
+      if (o.burst){ o.v.y = Math.max(-1.4, o.v.y - 0.2*dt); }
+      o.p.x += (o.v.x + Math.sin(t*1.2 + o.ph)*0.3)*dt; o.p.y += o.v.y*dt; o.p.z += o.v.z*dt;
+      o.r.x += o.w.x*dt; o.r.y += o.w.y*dt; o.r.z += o.w.z*dt*0.5;
+      if (o.p.y < 0.05 || o.p.z > cz - 0.4 || o.p.z < cz - 60 || (o.burst && o.p.y < camera.position.y - (cz - o.p.z)*TANH*1.3)){ if (i < ambient){ spawn(o, push > 0.5); } else { o.alive = false; mesh.setMatrixAt(i, zero); continue; } }
+      q.setFromEuler(o.r); sv.setScalar(o.s); mtx.compose(o.p, q, sv); mesh.setMatrixAt(i, mtx); }
+    mesh.instanceMatrix.needsUpdate = true; };
+  if (mesh.instanceColor) mesh.instanceColor.needsUpdate = true;
+  mesh.frustumCulled = false; scene.add(mesh);
+}
+function makeEnv(){
+  const t = canvasTex(512, 256, (x) => { const g = x.createLinearGradient(0,0,0,256); g.addColorStop(0, "#0a1440"); g.addColorStop(0.42, "#2a3570"); g.addColorStop(0.5, "#ffcf86"); g.addColorStop(0.56, "#7a4a1a"); g.addColorStop(1, "#120a04"); x.fillStyle = g; x.fillRect(0,0,512,256);
+    for (let k=0;k<9;k++){ const gx = k*60 + 20, gy = 100 + (k%3)*10; const rg = x.createRadialGradient(gx, gy, 1, gx, gy, 40); rg.addColorStop(0, "rgba(255,240,200,1)"); rg.addColorStop(1, "rgba(255,200,120,0)"); x.fillStyle = rg; x.fillRect(gx-40, gy-40, 80, 80); } });
+  t.mapping = THREE.EquirectangularReflectionMapping;
+  const pm = new THREE.PMREMGenerator(R); const e = pm.fromEquirectangular(t).texture; pm.dispose(); t.dispose(); return e;
+}
+function initGL(){
+  if (!window.THREE) return false;
+  try { R = new THREE.WebGLRenderer({canvas: $("#gl"), antialias: true, powerPreference: "high-performance"}); } catch(e){ R = null; }
+  if (!R || !R.getContext()) return false;
+  R.setPixelRatio(Math.min(window.devicePixelRatio || 1, W < 700 ? 1.75 : 1.5)); R.setSize(W, H, false);
+  R.outputEncoding = THREE.sRGBEncoding; R.toneMapping = THREE.NoToneMapping;
+  scene = new THREE.Scene(); const fogC = new THREE.Color(); fogC.setRGB(0.0065, 0.011, 0.042); scene.fog = new THREE.FogExp2(fogC, 0.032);
+  camera = new THREE.PerspectiveCamera(FOV, W/H, 0.1, 1000); camera.rotation.order = "YXZ"; camera.position.set(0, G.camY, G.REST + 10);
+  envTex = makeEnv();
+  FLAME = flameTex(); GLOW = glowTex([[0, "rgba(255,255,255,1)"], [0.25, "rgba(255,230,180,.5)"], [1, "rgba(255,200,120,0)"]]);
+  const M = {};
+  M.gold = new THREE.MeshStandardMaterial({color: 0xe8b866, metalness: 1, roughness: 0.3, envMap: envTex, envMapIntensity: 1.2, emissive: 0x3a2000, emissiveIntensity: 0.6});
+  M.clay = new THREE.MeshStandardMaterial({color: 0x8a3a14, roughness: 0.75, emissive: 0x3a1000, emissiveIntensity: 0.6});
+  M.marble = new THREE.MeshStandardMaterial({color: 0xe9dcc0, roughness: 0.6, emissive: 0x2a1a0a, emissiveIntensity: 0.5});
+  M.diyaGeo = new THREE.LatheGeometry([[0.001,0],[0.1,0],[0.17,0.035],[0.21,0.1],[0.19,0.115],[0.14,0.07],[0.001,0.06]].map(([a,b]) => new THREE.Vector2(a,b)), 18);
+  M.standGeo = new THREE.LatheGeometry([[0.001,0],[0.4,0],[0.42,0.12],[0.16,0.3],[0.1,0.9],[0.14,1.0],[0.08,1.6],[0.3,1.85],[0.001,1.9]].map(([a,b]) => new THREE.Vector2(a,b)), 20);
+  scene.add(new THREE.AmbientLight(0x4a5a90, 0.55));
+  const moon = new THREE.DirectionalLight(0xa9bcff, 0.4); moon.position.set(-6, 14, 8); scene.add(moon);
+  const front = new THREE.DirectionalLight(0xffd8a8, 0.55); front.position.set(2, 6, 12); scene.add(front);
+  for (let k=0;k<2;k++){ const l = new THREE.PointLight(0xffa24a, 1.6, 14, 2); scene.add(l); lightsWarm.push(l); }
+  buildSky(); buildRays(M); buildArches(M); buildFloor(M); buildGurdwara(M); buildFloaters(M); buildDust(); if (!reduce) buildPetals();
+  return true;
+}
+
+/* ================= CAMERA / RENDER ================= */
+const INTRO = 0.55; let lenis = null, camIntro = reduce ? 0 : -INTRO, pointer = {x:0, y:0, tx:0, ty:0}, activeIdx = -1, lastCam = 0, camVel = 0, scrollP = 0, opened = false;
+function camFromScroll(y){
+  const p = clamp(y / SEG, 0, N-1); scrollP = p;
+  if (reduce) return Math.round(p);
+  const i = Math.min(N-2, Math.floor(p)); const t = p - i;
+  return i + smooth((t - 0.1)/0.8);
+}
+function camPose(c){
+  let z, pitch = 0;
+  if (c <= N-2) z = -c*G.D + G.REST;
+  else { const t = clamp(c - (N-2)); z = lerp(-(N-2)*G.D + G.REST, G.REST6, smooth(t)); pitch = G.PITCH6*smooth((t - 0.35)/0.65); }
+  return {z, y: G.camY, pitch};
+}
+function render(){
+  const y = lenis ? lenis.animatedScroll : window.scrollY;
+  let cam = camFromScroll(y) + camIntro; if (typeof window.__camOverride === "number") cam = window.__camOverride; window.__cam = cam;
+  camVel = lerp(camVel, cam - lastCam, 0.2); lastCam = cam;
+  pointer.x = lerp(pointer.x, pointer.tx, 0.05); pointer.y = lerp(pointer.y, pointer.ty, 0.05);
+  const frac = cam - Math.floor(cam), moving = reduce ? 0 : Math.sin(Math.PI*clamp(frac));
+  const now = performance.now()/1000;
+  if (R){
+    U.time.value = now;
+    const pose = camPose(cam);
+    const sway = reduce ? 0 : Math.sin(now*0.35)*0.05;
+    camera.position.set(pointer.x*0.3 + moving*Math.sin(cam*2.1)*0.22, pose.y - pointer.y*0.18 + moving*0.22 + sway, pose.z);
+    camera.rotation.set(pose.pitch - pointer.y*0.01, -pointer.x*0.018, moving*0.03*Math.sin(cam*3.1));
+    const end = smooth((cam - (N-2) - 0.15)/0.7);
+    scene.fog.density = lerp(0.032, 0.0072, end);
+    skyMat.uniforms.warm.value = lerp(0.25, 0.8, end);
+    G.sky.position.copy(camera.position); G.stars.position.copy(camera.position);
+    const az = Math.max(camera.position.z - G.REST + G.DEP/2 + 1.6, -(N-2)*G.D + G.DEP/2 + 1.6);
+    lightsWarm.forEach((l, j) => { const sd = j ? 1 : -1; l.position.set(sd*(G.a + 0.2), 0.9, az); l.intensity = 1.5 + Math.sin(now*9 + j*2)*0.12 + Math.sin(now*23 + j)*0.06; });
+    flames.forEach(fl => { const fk = 1 + Math.sin(now*11 + fl.ph)*0.07 + Math.sin(now*27 + fl.ph*2)*0.05; fl.f.scale.set(0.16*fl.s*(2 - fk), 0.3*fl.s*fk, 1);
+      if (!fl.wp){ fl.wp = new THREE.Vector3(); fl.f.getWorldPosition(fl.wp); }
+      const dz = camera.position.z - fl.wp.z, vis = dz < 0 ? 0 : smooth((dz - 3)/6);
+      fl.f.material.opacity = vis; fl.f.visible = vis > 0.01; fl.gw.visible = vis > 0.01; fl.gw.material.opacity = (0.42 + Math.sin(now*7 + fl.ph)*0.08)*vis; });
+    floaters.forEach(o => { o.g.position.y = o.y + Math.sin(now*o.sp + o.ph)*0.3; });
+    rays.forEach(m => { m.material.opacity = m.userData.base*(0.75 + 0.25*Math.sin(now*0.6 + m.userData.ph)); });
+    if (fan) fan.rotation.z = Math.sin(now*0.08)*0.08;
+    if (dust) dust.position.y = Math.sin(now*0.2)*0.3;
+    if (flag && end > 0.01){ const p = flag.mesh.geometry.attributes.position, b = flag.base;
+      for (let i=0;i<p.count;i++){ const x = b[i*3], yy = b[i*3+1]; const w = x/3.6; p.setZ(i, Math.sin(x*1.7 - now*3.2 + yy*0.4)*0.32*w); p.setY(i, yy - w*w*0.3 + Math.sin(x*1.2 - now*2.6)*0.06*w); }
+      p.needsUpdate = true; flag.mesh.geometry.computeVertexNormals(); }
+    petals && petals(Math.abs(camVel)*60);
+    R.render(scene, camera);
+  } else { const fb = $(".fb-arch"); if (fb) fb.style.opacity = (1 - smooth((cam - (N-2) - 0.1)/0.5)).toFixed(3); }
+  sceneEls.forEach((el, i) => {
+    const d = i - cam; let op, sc, blur, rx;
+    if (reduce){ op = 1 - smooth(Math.abs(d)/0.5); sc = 1; blur = 0; rx = 0; }
+    else if (d >= 0){ op = 1 - smooth((d - 0.06)/0.5); sc = 1/(1 + d*2.2); blur = Math.min(8, d*14); rx = d*22; }
+    else { op = 1 - smooth(-d/0.36); sc = 1 + (-d)*2.4; blur = Math.min(10, -d*22); rx = 0; }
+    if (op < 0.01){ if (el.style.visibility !== "hidden"){ el.style.visibility = "hidden"; el.style.opacity = "0"; } }
+    else {
+      el.style.visibility = "visible"; el.style.opacity = op.toFixed(3);
+      el.style.transform = `translate3d(${(pointer.x*8*sc).toFixed(1)}px,${(pointer.y*5*sc).toFixed(1)}px,0) perspective(900px) rotateX(${rx.toFixed(2)}deg) scale(${sc.toFixed(4)})`;
+      el.style.filter = blur > 0.3 ? `blur(${blur.toFixed(1)}px)` : "none";
+    }
+    if (opened && Math.abs(d) < 0.4 && !sceneState[i].entered) enterScene(i);
+    if (Math.abs(d) > 0.95 && sceneState[i].entered) resetScene(i);
+  });
+  const nearest = Math.round(cam);
+  if (nearest !== activeIdx && Math.abs(cam - nearest) < 0.2){
+    sceneEls.forEach((el,i) => el.classList.toggle("active", i === nearest));
+    activeIdx = nearest; $$("#dots button").forEach((b,i) => b.classList.toggle("on", i === nearest));
+    onSceneSettled(nearest);
+  }
+}
+
+/* ================= SCENE ANIMATIONS ================= */
+function splitLetters(el){ if (el.dataset.split) return; el.dataset.split = "1";
+  $$(":scope > span", el).forEach(sp => { const txt = sp.textContent; sp.textContent = "";
+    // Gurmukhi is animated per word (keeps matras attached); Latin per letter
+    const parts = /[\u0A00-\u0A7F]/.test(txt) ? txt.split(/(\s+)/) : Array.from(txt);
+    parts.forEach(ch => { if (!ch) return; const c = document.createElement("span"); c.className = "ch"; c.textContent = ch; if (/^\s+$/.test(ch)) c.style.whiteSpace = "pre"; sp.appendChild(c); }); }); }
+function splitWords(el){ if (el.dataset.split) return; el.dataset.split = "1";
+  const words = el.textContent.trim().split(/\s+/); el.textContent = "";
+  words.forEach((w, i) => { const s = document.createElement("span"); s.className = "c"; s.textContent = w; el.appendChild(s); if (i < words.length-1) el.appendChild(document.createTextNode(" ")); });
+  const cs = $$(".c", el); const k = cs.findIndex(c => /ਨਿਧਾਨ|Nidhaan/.test(c.textContent));
+  if (k >= 0) [k-1, k, k+1].forEach(j => cs[j] && cs[j].classList.add("hl")); }
+function enterScene(i){
+  const st = sceneState[i]; st.entered = true; const el = sceneEls[i];
+  if (st.tl) st.tl.kill();
+  if (reduce || !window.gsap){ $$("[data-a]", el).forEach(x => { x.style.opacity = 1; x.style.transform = "none"; }); $$(".tw .c", el).forEach(c => c.classList.add("on")); return; }
+  const tl = gsap.timeline({delay: 0.05}); st.tl = tl; let at = 0;
+  $$("[data-a]", el).forEach(x => {
+    if ((x.closest(".t-pa") || x.classList.contains("t-pa")) && docEl.lang !== "pa") return;
+    if ((x.closest(".t-en") || x.classList.contains("t-en")) && docEl.lang !== "en") return;
+    switch (x.dataset.a){
+      case "up": tl.fromTo(x, {opacity:0, y:22, filter:"blur(6px)"}, {opacity:1, y:0, filter:"blur(0px)", duration:0.9, ease:"power3.out"}, at); at += 0.12; break;
+      case "pop": tl.fromTo(x, {opacity:0, scale:0.3, rotate:-140}, {opacity:1, scale:1, rotate:0, duration:1.4, ease:"back.out(1.5)"}, at); at += 0.18; break;
+      case "draw": tl.fromTo(x, {opacity:1, clipPath:"inset(0 50% 0 50%)"}, {clipPath:"inset(0 0% 0 0%)", duration:1.1, ease:"power2.inOut"}, at); at += 0.1; break;
+      case "bani": tl.set(x, {opacity:1}, at); tl.fromTo(x.children, {opacity:0, y:30, rotateX:-70, transformPerspective:600, filter:"blur(8px)"}, {opacity:1, y:0, rotateX:0, filter:"blur(0px)", duration:1.4, ease:"power3.out", stagger:0.45}, at); at += 1.3; break;
+      case "name": { splitLetters(x); tl.set(x, {opacity:1}, at); const chs = $$(".ch", x);
+        tl.fromTo(chs, {opacity:0, y:34, scale:1.3, filter:"blur(10px)"}, {opacity:1, y:0, scale:1, filter:"blur(0px)", duration:1.3, ease:"power3.out", stagger: chs.length > 6 ? 0.05 : 0.22}, at); at += 0.8; break; }
+      case "halo": tl.fromTo(x, {opacity:0, scale:0.2}, {opacity:1, scale:1, duration:1.8, ease:"expo.out"}, at); break;
+      case "feet": tl.set(x, {opacity:1}, at); tl.fromTo($$(".ft", x), {opacity:0, y:10, scale:0.6, transformOrigin:"50% 50%"}, {opacity:1, y:0, scale:1, duration:0.7, ease:"back.out(2)", stagger:0.45}, at); at += 0.6; break;
+      case "flip": tl.set(x, {opacity:1}, at); tl.fromTo(x.children, {opacity:0, rotateX:-95, transformPerspective:500, transformOrigin:"50% 0%"}, {opacity:1, rotateX:0, duration:0.9, ease:"power3.out", stagger:0.12}, at); at += 0.3; break;
+      case "stagger": tl.set(x, {opacity:1}, at); tl.fromTo(x.children, {opacity:0, y:16, filter:"blur(4px)"}, {opacity:1, y:0, filter:"blur(0px)", duration:0.8, ease:"power3.out", stagger:0.13}, at); at += 0.4; break;
+      case "cards": tl.set(x, {opacity:1}, at); tl.fromTo(x.children, {opacity:0, z:-420, rotateY:(k) => k % 2 ? -55 : 55, rotateX:12, transformPerspective:900}, {opacity:1, z:0, rotateY:0, rotateX:0, duration:1.25, ease:"power3.out", stagger:0.17, clearProps:"transform"}, at); at += 0.5; break;
+      case "unroll": tl.fromTo(x, {opacity:0, rotateX:-80, transformPerspective:1000, transformOrigin:"50% 0%", y:-20}, {opacity:1, rotateX:0, y:0, duration:1.3, ease:"power3.out"}, at); at += 0.5; break;
+      case "type": { splitWords(x); tl.set(x, {opacity:1}, at); const words = $$(".c", x);
+        if (st.typed) tl.add(() => words.forEach(w => w.classList.add("on")), at);
+        else words.forEach((w, k) => tl.add(() => w.classList.add("on"), at + k*0.06));
+        at += st.typed ? 0.1 : words.length*0.06; break; }
+    }
+  });
+  tl.add(() => { st.typed = true; });
+}
+function resetScene(i){
+  const st = sceneState[i]; st.entered = false;
+  if (st.tl){ st.tl.kill(); st.tl = null; }
+  if (reduce || !window.gsap) return;
+  $$("[data-a]", sceneEls[i]).forEach(x => gsap.set(x, {opacity:0}));
+  $$(".tw .c", sceneEls[i]).forEach(c => c.classList.remove("on"));
+}
+function onSceneSettled(i){
+  if (!opened) return;
+  if (i === 1) burstPetals(70);
+  if (i === N-1) burstPetals(70);
+  $("#hint").classList.toggle("show", i === 0);
+}
+
+/* ================= COUNTDOWN / ICS ================= */
+const AARAMBH = Date.UTC(2026, 11, 6, 5, 30, 0); // 6 Dec 2026, 11:00 IST
+function tickCountdown(){
+  const ms = AARAMBH - Date.now();
+  if (ms <= 0){ $(".cdwrap").hidden = true; $("#cdDone").hidden = false; return; }
+  const s = Math.floor(ms/1000), v = {cdD: Math.floor(s/86400), cdH: Math.floor(s%86400/3600), cdM: Math.floor(s%3600/60), cdS: s%60};
+  for (const k in v){ const el = document.getElementById(k); const txt = String(v[k]).padStart(2, "0"); if (el.textContent !== txt){ el.textContent = txt; if (!reduce){ el.classList.remove("tick"); void el.offsetWidth; el.classList.add("tick"); } } }
+}
+function downloadICS(){
+  const stamp = new Date().toISOString().replace(/[-:]/g, "").replace(/\.\d+/, "");
+  const gmap = "https://www.google.com/maps/search/?api=1&query=Gurdwara%20Paonta%20Sahib%20Kavi%20Darbar%2C%20Paonta%20Sahib%2C%20Himachal%20Pradesh";
+  const bmap = "https://www.google.com/maps/search/?api=1&query=Bhatia%20Palace%2C%20Paonta%20Sahib%2C%20Himachal%20Pradesh";
+  const lines = ["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Akhand Path Invitation//EN","CALSCALE:GREGORIAN","METHOD:PUBLISH",
+    "BEGIN:VEVENT","UID:nidhaan-akhand-path-aarambh-20261206@invite","DTSTAMP:" + stamp,"DTSTART:20261206T053000Z","DTEND:20261206T063000Z",
+    "SUMMARY:Aarambh Sri Akhand Path Sahib — S. Nidhaan Singh",
+    "LOCATION:Gurdwara Sri Paonta Sahib\\, Kavi Darbar Asthan\\, Paonta Sahib\\, Himachal Pradesh",
+    "DESCRIPTION:ਆਰੰਭ ਸ਼੍ਰੀ ਆਖੰਡ ਪਾਠ ਸਾਹਿਬ — ਸਵੇਰੇ 11 ਵਜੇ\\nS. Harbhajan Singh Hundal & Sardarni Manjeet Kaur Hundal\\n" + gmap,
+    "BEGIN:VALARM","TRIGGER:-P1D","ACTION:DISPLAY","DESCRIPTION:Aarambh Sri Akhand Path Sahib tomorrow","END:VALARM","END:VEVENT",
+    "BEGIN:VEVENT","UID:nidhaan-akhand-path-bhog-20261208@invite","DTSTAMP:" + stamp,"DTSTART:20261208T053000Z","DTEND:20261208T083000Z",
+    "SUMMARY:Bhog Sri Akhand Path Sahib & Langar — S. Nidhaan Singh",
+    "LOCATION:Gurdwara Sri Paonta Sahib\\, Kavi Darbar Asthan\\, Paonta Sahib\\, Himachal Pradesh",
+    "DESCRIPTION:ਭੋਗ ਸ਼੍ਰੀ ਆਖੰਡ ਪਾਠ ਸਾਹਿਬ — ਸਵੇਰੇ 11 ਵਜੇ\\nਲੰਗਰ — ਦੁਪਹਿਰ 12 ਵਜੇ\\, ਭਾਟੀਆ ਪੈਲੇਸ ਪਾਉਂਟਾ ਸਾਹਿਬ\\nLangar 12:00 PM — Bhatia Palace\\, Paonta Sahib: " + bmap,
+    "BEGIN:VALARM","TRIGGER:-P1D","ACTION:DISPLAY","DESCRIPTION:Bhog Sri Akhand Path Sahib tomorrow","END:VALARM","END:VEVENT","END:VCALENDAR"];
+  const enc = new TextEncoder();
+  const ics = lines.map(line => { const out = []; let cur = ""; for (const ch of line){ if (enc.encode(cur + ch).length > 73){ out.push(cur); cur = " " + ch; } else cur += ch; } out.push(cur); return out.join("\r\n"); }).join("\r\n");
+  window.__ics = ics;
+  const blob = new Blob([ics], {type:"text/calendar;charset=utf-8"}); const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob); a.download = "Nidhaan-Singh-Akhand-Path-Sahib.ics"; document.body.appendChild(a); a.click();
+  setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1500);
+}
+
+/* ================= MUSIC (WebAudio drone, muted by default) ================= */
+let audio = null;
+function startAudio(){
+  const AC = window.AudioContext || window.webkitAudioContext; if (!AC) return null;
+  const ac = new AC(); const master = ac.createGain(); master.gain.value = 0; master.connect(ac.destination);
+  const conv = ac.createConvolver(); const len = ac.sampleRate*3.5; const ir = ac.createBuffer(2, len, ac.sampleRate);
+  for (let ch=0; ch<2; ch++){ const d = ir.getChannelData(ch); for (let i=0;i<len;i++) d[i] = (Math.random()*2-1)*Math.pow(1-i/len, 2.4); }
+  conv.buffer = ir; const wet = ac.createGain(); wet.gain.value = 0.6; conv.connect(wet); wet.connect(master);
+  const lp = ac.createBiquadFilter(); lp.type = "lowpass"; lp.frequency.value = 1500; lp.connect(master); lp.connect(conv);
+  const sa = 146.83, notes = [sa*0.75, sa, sa, sa/2]; let ni = 0;
+  function pluck(){ const now = ac.currentTime, f = notes[ni % 4]; ni++;
+    [1, 2, 3, 4, 5].forEach((h, k) => { const o = ac.createOscillator(), g = ac.createGain(); o.type = "sine"; o.frequency.value = f*h; o.detune.value = (Math.random()-0.5)*6;
+      g.gain.setValueAtTime(0, now); g.gain.linearRampToValueAtTime(0.05/(k+1.2), now + 0.05); g.gain.exponentialRampToValueAtTime(0.0001, now + 3.8 - k*0.3);
+      o.connect(g); g.connect(lp); o.start(now); o.stop(now + 4); }); }
+  const padNotes = [sa, sa*9/8, sa*5/4, sa*3/2, sa*5/3, sa*3/2, sa*5/4, sa*9/8]; let pi = 0;
+  function melody(){ const now = ac.currentTime, f = padNotes[pi % padNotes.length]*2; pi++;
+    const o = ac.createOscillator(), o2 = ac.createOscillator(), g = ac.createGain(); o.type = "triangle"; o2.type = "sine"; o.frequency.value = f; o2.frequency.value = f*2.002;
+    g.gain.setValueAtTime(0, now); g.gain.linearRampToValueAtTime(0.03, now + 0.5); g.gain.linearRampToValueAtTime(0.022, now + 2.2); g.gain.linearRampToValueAtTime(0, now + 3.2);
+    o.connect(g); o2.connect(g); g.connect(lp); o.start(now); o2.start(now); o.stop(now + 3.3); o2.stop(now + 3.3); }
+  pluck(); const t1 = setInterval(pluck, 1150); melody(); const t2 = setInterval(melody, 2800);
+  return {ac, master, stop(){ clearInterval(t1); clearInterval(t2); }};
+}
+
+/* ================= DOORS / OPEN ================= */
+function openInvite(){
+  if (opened) return; opened = true;
+  const dr = $("#doors");
+  const done = () => { dr.classList.add("gone"); docEl.classList.remove("locked"); if (lenis) lenis.start(); $("#ui").classList.add("show"); $("#dots").classList.add("show"); };
+  if (reduce || !window.gsap){ camIntro = 0; done(); return; }
+  const tl = gsap.timeline({onComplete: done});
+  tl.to("#openBtn", {scale:1.15, duration:0.35, ease:"power2.out"})
+    .to(".d-center", {opacity:0, scale:1.2, filter:"blur(8px)", duration:0.7, ease:"power2.in"}, 0.25)
+    .to(".dlang", {opacity:0, duration:0.3}, 0.2)
+    .to(".d-glow", {opacity:1, duration:0.5, ease:"power2.out"}, 0.45)
+    .add(() => burstPetals(120), 0.7)
+    .to(".door.l", {rotateY:96, duration:2.2, ease:"power3.inOut"}, 0.5)
+    .to(".door.r", {rotateY:-96, duration:2.2, ease:"power3.inOut"}, 0.5)
+    .to(".d-glow", {opacity:0, duration:1.2, ease:"power2.out"}, 1.3)
+    .to(".d-arch", {scale:2.6, opacity:0, duration:1.8, ease:"power3.in"}, 1.0);
+  gsap.to({v: camIntro}, {v: 0, duration: 3.3, delay: 0.6, ease: "power3.inOut", onUpdate(){ camIntro = this.targets()[0].v; }});
+}
+
+/* ================= SNAP / NAV ================= */
+let snapTimer = null, snapping = false, touching = false, restIdx = 0;
+function goTo(i, dur){
+  i = clamp(i, 0, N-1); restIdx = i;
+  if (lenis){ snapping = true; lenis.scrollTo(i*SEG, {duration: dur ?? 1.6, easing: t => 1 - Math.pow(1 - t, 3), onComplete: () => { snapping = false; }, lock: false, force: true}); }
+  else window.scrollTo({top: i*SEG, behavior: reduce ? "auto" : "smooth"});
+}
+function scheduleSnap(){
+  clearTimeout(snapTimer);
+  snapTimer = setTimeout(() => {
+    if (touching || snapping || !opened) return;
+    const p = window.scrollY / SEG; let r = Math.round(p);
+    if (Math.abs(p - r) < 0.01){ restIdx = r; return; }
+    if (r === restIdx && Math.abs(p - restIdx) > 0.08) r = restIdx + Math.sign(p - restIdx);
+    goTo(r, 1.4);
+  }, 170);
+}
+
+/* ================= INIT ================= */
+function setLang(l){
+  docEl.lang = l; try { localStorage.setItem("apLang", l); } catch(e){}
+  sceneState.forEach((s, i) => { if (s.entered){ s.entered = false; if (s.tl) s.tl.kill(); $$("[data-a]", sceneEls[i]).forEach(x => { x.style.opacity = ""; }); } });
+  fitScenes();
+}
+function fallbackArch(){
+  const dz = G.REST; const [l, t] = proj(-G.AW/2, G.AH, dz), [r, b] = proj(G.AW/2, 0, dz);
+  const op = openingPoly(G, 0, true);
+  const d = `M0 0H${G.AW.toFixed(3)}V${G.AH.toFixed(3)}H0Z M` + op.map(([x,y]) => (x + G.AW/2).toFixed(3) + " " + (G.AH - y).toFixed(3)).join("L") + "Z";
+  const svg = `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 ${G.AW.toFixed(3)} ${G.AH.toFixed(3)}' preserveAspectRatio='none'><path fill-rule='evenodd' d='${d}'/></svg>`;
+  const el = $(".fb-arch"); el.style.setProperty("--ax", l+"px"); el.style.setProperty("--ay", t+"px"); el.style.setProperty("--aw", (r-l)+"px"); el.style.setProperty("--ah", (b-t)+"px");
+  el.style.setProperty("--amask", `url("data:image/svg+xml,${encodeURIComponent(svg)}")`);
+}
+async function boot(){
+  docEl.classList.add("locked");
+  $$(".seal").forEach(s => s.innerHTML = sealSVG());
+  $$(".feet").forEach(f => f.innerHTML = feetSVG());
+  $$(".lt-orn").forEach(o => o.innerHTML = ornSVG());
+  $(".ic-diya").innerHTML = diyaIcon(); $(".ic-khanda").innerHTML = khandaSVG("#fbe7b5"); $(".ic-langar").innerHTML = langarIcon();
+  $$(".vc-pin").forEach(p => p.innerHTML = pinSVG());
+  $$(".d-panel").forEach(p => p.innerHTML = panelSVG());
+  let lang = "pa"; try { lang = localStorage.getItem("apLang") || "pa"; } catch(e){} docEl.lang = lang;
+  const bar = $("#ldBar"); bar.style.width = "15%";
+  const fontsReady = Promise.race([Promise.all(["600 20px 'Noto Serif Gurmukhi'","700 20px 'Noto Serif Gurmukhi'","500 20px 'Mukta Mahee'","600 20px 'Mukta Mahee'","400 20px 'Great Vibes'","500 20px 'Cormorant Garamond'","italic 500 20px 'Cormorant Garamond'","600 20px 'Cinzel'"].map(f => document.fonts.load(f, /Gurmukhi|Mukta/.test(f) ? "ਸ਼੍ਰੀ ੴ" : "Aa").catch(()=>{}))), new Promise(r => setTimeout(r, 4000))]);
+  await fontsReady; bar.style.width = "45%";
+  dims(); doorArch();
+  let gl = false; try { gl = window.__noGL ? false : initGL(); } catch(e){ console.warn("WebGL init failed", e); gl = false; }
+  if (!gl){ R = null; docEl.classList.add("nogl"); fallbackArch(); const box = $("#cssPetals"); box.style.display = "block"; if (!reduce) for (let i=0;i<16;i++){ const p = document.createElement("i"); p.style.left = (Math.random()*100)+"%"; p.style.animationDuration = (9+Math.random()*8)+"s"; p.style.animationDelay = (-Math.random()*15)+"s"; box.appendChild(p); } }
+  bar.style.width = "85%";
+  layoutScenes();
+  if (!reduce && window.gsap) $$(".scene [data-a]").forEach(x => gsap.set(x, {opacity:0}));
+  tickCountdown(); setInterval(tickCountdown, 1000);
+  const names = ["ਗੁਰਬਾਣੀ","ਦਾਤ","ਸੱਦਾ","ਆਰੰਭ","ਪ੍ਰੋਗਰਾਮ","ਸਥਾਨ","ਧੰਨਵਾਦ"];
+  names.forEach((n, i) => { const b = document.createElement("button"); b.type = "button"; b.setAttribute("aria-label", n); b.addEventListener("click", () => goTo(i, 1.4 + Math.abs(i - Math.round(scrollP))*0.3)); $("#dots").appendChild(b); });
+  if (!reduce && window.Lenis){
+    lenis = new Lenis({lerp: 0.08, wheelMultiplier: 0.85, smoothWheel: true, syncTouch: false});
+    lenis.stop(); lenis.on("scroll", () => { if (!snapping) scheduleSnap(); });
+  } else window.addEventListener("scroll", scheduleSnap, {passive:true});
+  window.addEventListener("touchstart", () => { touching = true; clearTimeout(snapTimer); }, {passive:true});
+  window.addEventListener("touchend", () => { touching = false; scheduleSnap(); }, {passive:true});
+  window.addEventListener("keydown", e => {
+    if (!opened){ if (e.key === "Enter" || e.key === " "){ e.preventDefault(); openInvite(); } return; }
+    if (["ArrowDown","PageDown"," "].includes(e.key)){ e.preventDefault(); goTo(Math.round(scrollP)+1, 1.6); }
+    if (["ArrowUp","PageUp"].includes(e.key)){ e.preventDefault(); goTo(Math.round(scrollP)-1, 1.6); }
+  });
+  window.addEventListener("pointermove", e => { if (e.pointerType !== "mouse") return; pointer.tx = (e.clientX/W - 0.5)*2; pointer.ty = (e.clientY/H - 0.5)*2; }, {passive:true});
+  $("#openBtn").addEventListener("click", openInvite);
+  const toggle = () => setLang(docEl.lang === "pa" ? "en" : "pa");
+  $("#langBtn").addEventListener("click", toggle); $("#langBtn2").addEventListener("click", toggle);
+  $("#icsBtn").addEventListener("click", downloadICS);
+  $("#replayBtn").addEventListener("click", () => goTo(0, 4.5));
+  $("#musicBtn").addEventListener("click", async () => {
+    const b = $("#musicBtn"), on = b.getAttribute("aria-pressed") !== "true";
+    if (on){ if (!audio) audio = startAudio(); if (!audio) return; if (audio.ac.state === "suspended") await audio.ac.resume(); const gn = audio.master.gain, t0 = audio.ac.currentTime; gn.cancelScheduledValues(t0); gn.setValueAtTime(gn.value, t0); gn.linearRampToValueAtTime(0.9, t0 + 1.5); }
+    else if (audio){ const gn = audio.master.gain, t0 = audio.ac.currentTime; gn.cancelScheduledValues(t0); gn.setValueAtTime(gn.value, t0); gn.linearRampToValueAtTime(0, t0 + 0.6); }
+    b.setAttribute("aria-pressed", String(on));
+  });
+  let rzT = null; const W0 = W, H0 = H;
+  window.addEventListener("resize", () => { clearTimeout(rzT); rzT = setTimeout(() => {
+    const nw = window.innerWidth, nh = window.innerHeight;
+    if (Math.abs(nw - W0) < 2 && Math.abs(nh - H0)/H0 < 0.2) return;
+    // orientation / size change: rebuild everything for the new aspect at the same scene
+    try { sessionStorage.setItem("apScene", String(Math.round(scrollP))); sessionStorage.setItem("apOpened", opened ? "1" : ""); } catch(e){}
+    location.reload();
+  }, 350); });
+  const frame = (t) => { if (lenis) lenis.raf(t); render(); requestAnimationFrame(frame); };
+  requestAnimationFrame(frame);
+  bar.style.width = "100%";
+  setTimeout(() => $("#loader").classList.add("gone"), 250);
+  let resume = null; try { if (sessionStorage.getItem("apOpened")){ resume = +sessionStorage.getItem("apScene") || 0; sessionStorage.removeItem("apOpened"); } } catch(e){}
+  if (resume !== null){ camIntro = 0; opened = true; $("#doors").classList.add("gone"); docEl.classList.remove("locked"); if (lenis) lenis.start(); $("#ui").classList.add("show"); $("#dots").classList.add("show"); window.scrollTo(0, resume*SEG); }
+  else if (window.gsap && !reduce){
+    gsap.from(".d-center > *", {opacity:0, y:24, duration:1.1, stagger:0.15, ease:"power3.out", delay:0.4});
+    gsap.from(".door.l", {xPercent:-8, duration:1.4, ease:"power3.out", delay:0.15}); gsap.from(".door.r", {xPercent:8, duration:1.4, ease:"power3.out", delay:0.15});
+  }
+  window.__inviteReady = true;
+}
+boot().catch(err => { console.warn(err); $("#loader").classList.add("gone"); });
+})();
+
+</script>
+</body>
+</html>
